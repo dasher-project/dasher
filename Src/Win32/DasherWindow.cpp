@@ -57,6 +57,7 @@ CDasherWindow::CDasherWindow(const wstring& configName) : m_configName(configNam
   m_pAppSettings = 0;
   m_pToolbar = 0;
   m_pEdit = 0;
+  m_pPopup = 0;
   m_pSpeedAlphabetBar = 0;
   m_pSplitter = 0;
   m_pDasher = 0;
@@ -109,7 +110,12 @@ HWND CDasherWindow::Create() {
   m_pEdit->Create(hWnd, m_pAppSettings->GetBoolParameter(APP_BP_TIME_STAMP));
   m_pEdit->SetFont(m_pAppSettings->GetStringParameter(APP_SP_EDIT_FONT), m_pAppSettings->GetLongParameter(APP_LP_EDIT_FONT_SIZE));
 
-  m_pDasher = new CDasher(hWnd, this, m_pEdit, settings, &fileUtils);
+  // Create Pop-Out Window
+  m_pPopup = new CPopup(m_pAppSettings);
+  m_pPopup->Create(hWnd, m_pAppSettings->GetBoolParameter(APP_BP_TIME_STAMP));
+  m_pPopup->SetFont(m_pAppSettings->GetStringParameter(APP_SP_EDIT_FONT), m_pAppSettings->GetLongParameter(APP_LP_EDIT_FONT_SIZE));
+
+  m_pDasher = new CDasher(hWnd, this, m_pEdit, m_pPopup, settings, &fileUtils);
 
   // Create a CAppSettings
   m_pAppSettings->SetHwnd(hWnd);
@@ -121,6 +127,7 @@ HWND CDasherWindow::Create() {
   // but at the moment it does, for training, blanking the display etc
 
   m_pEdit->SetInterface(m_pDasher);
+  m_pPopup->SetInterface(m_pDasher);
 
   m_pSpeedAlphabetBar = new CStatusControl(m_pDasher->GetSettingsUser(), m_pAppSettings);
   m_pSpeedAlphabetBar->Create(hWnd);
@@ -136,6 +143,7 @@ HWND CDasherWindow::Create() {
 CDasherWindow::~CDasherWindow() {
   delete m_pToolbar;
   delete m_pEdit;
+  delete m_pPopup;
   delete m_pSplitter;
   delete m_pDasher;
   delete m_pSpeedAlphabetBar;
@@ -209,6 +217,10 @@ LRESULT CDasherWindow::OnCommand(UINT message, WPARAM wParam, LPARAM lParam, BOO
   if (((HWND)lParam == *m_pEdit) && (HIWORD(wParam) == EN_CHANGE)) {
     m_pEdit->SetDirty();
     return 0;
+  }
+  if (((HWND)lParam == *m_pPopup) && (HIWORD(wParam) == EN_CHANGE)) {
+	  m_pPopup->SetDirty();
+	  return 0;
   }
 
   // Parse the menu selections:
@@ -415,6 +427,7 @@ void CDasherWindow::Layout() {
   case APP_STYLE_DIRECT:
     m_pDasher->Move(0, ToolbarHeight, Width, CanvasHeight);
     m_pEdit->ShowWindow(SW_HIDE);
+	m_pPopup->ShowWindow(SW_HIDE);
     m_pSplitter->ShowWindow(SW_HIDE);
     break;
 
@@ -429,6 +442,7 @@ void CDasherWindow::Layout() {
       m_pEdit->Move(Width / 2, ToolbarHeight, Width - Width / 2, CanvasHeight);
     }
     m_pEdit->ShowWindow(SW_SHOW);
+	m_pPopup->ShowWindow(SW_SHOW);
     m_pSplitter->ShowWindow(SW_HIDE);
     break;
 
@@ -460,6 +474,7 @@ void CDasherWindow::Layout() {
       m_pSplitter->Move(SplitterY, Width);
     }
     m_pEdit->ShowWindow(SW_SHOW);
+	m_pEdit->ShowWindow(SW_SHOW);
     m_pSplitter->ShowWindow(SW_SHOW);
     if (m_bSizeRestored)
       m_pAppSettings->SetLongParameter(APP_LP_EDIT_SIZE, EditHeight);
