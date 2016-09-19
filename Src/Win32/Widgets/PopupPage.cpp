@@ -50,7 +50,9 @@ void CPopupPage::PopulateList() {
   if (m_pAppSettings->GetBoolParameter(APP_BP_POPUP_ENABLE) == true) {
 	  SendMessage(GetDlgItem(m_hwnd, IDC_POPUP_ENABLE), BM_SETCHECK, BST_CHECKED, 0);
   }
-  
+  if (m_pAppSettings->GetBoolParameter(APP_BP_POPUP_EXTERNAL_SCREEN) == true) {
+	  SendMessage(GetDlgItem(m_hwnd, IDC_POPUP_EXTERNAL), BM_SETCHECK, BST_CHECKED, 0);
+  }
   // TODO: Annoying inversion makes this hard
   if(m_pAppSettings->GetBoolParameter(BP_PALETTE_CHANGE)) {
     SendMessage(GetDlgItem(m_hwnd, IDC_COLOURSCHEME), BM_SETCHECK, BST_UNCHECKED, 0);
@@ -188,8 +190,8 @@ LRESULT CPopupPage::WndProc(HWND Window, UINT message, WPARAM wParam, LPARAM lPa
 		case IDC_POPUP_ENABLE:
 			m_pAppSettings->SetBoolParameter(APP_BP_POPUP_ENABLE, !(m_pAppSettings->GetBoolParameter(APP_BP_POPUP_ENABLE)));
 			break;
-		case IDC_POPUP_FULLSCREEN:
-			m_pAppSettings->SetBoolParameter(APP_BP_POPUP_FULL_SCREEN, !(m_pAppSettings->GetBoolParameter(APP_BP_POPUP_FULL_SCREEN)));
+		case IDC_POPUP_EXTERNAL:
+			m_pAppSettings->SetBoolParameter(APP_BP_POPUP_EXTERNAL_SCREEN, !(m_pAppSettings->GetBoolParameter(APP_BP_POPUP_EXTERNAL_SCREEN)));
 			break;
 		case IDC_POPUP_ALWAYSTOP:
 			OutputDebugStringW(L"Always On Top\n");

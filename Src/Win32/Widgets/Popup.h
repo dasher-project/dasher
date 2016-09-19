@@ -53,6 +53,7 @@ class CPopup : public ATL::CWindowImpl<CPopup> {
   ~CPopup();
   
   HWND Create(HWND hParent, bool bNewWithDate);
+  void setupPopup(); //Call once Dasher has been drawn, so we can determine placement
 
   // Superclass the built-in EDIT window class
   DECLARE_WND_SUPERCLASS(NULL, _T("EDIT"))
@@ -78,7 +79,7 @@ class CPopup : public ATL::CWindowImpl<CPopup> {
   void output(const std::string & sText);
 
   void updateDisplay(const std::string sText);
-    
+  
   // remove the previous character: called when we steer/reverse the crosshair out of a node
   void deletetext(const std::string & sText);
 
@@ -95,22 +96,27 @@ class CPopup : public ATL::CWindowImpl<CPopup> {
   HWND m_popup;
   
   HWND m_hTarget;
-  bool m_bForwardKeyboard;
-  
-  void GetRange(bool bForwards, Dasher::CControlManager::EditDistance iDist, int* iStart, int* iEnd);
+
   
   HFONT m_Font;
   
   std::string m_Output;         // UTF-8 to go to training file
   
   HWND targetwindow;
-  INPUT fakekey[2];
   
   void InsertText(Tstring InsertText);  // add symbol to edit control
   
   CAppSettings *m_pAppSettings;
-  void setupOnExtendedDisplay();
+
   RECT getInitialWindow();
+  void calculateDisplayProperties();
+  void positionPopup();
+  void getDasherWidnowInfo();
+  bool getMonitorInfo();
+
+  RECT dasherWindwowRect;
+  RECT externalMonitorRect;
+  RECT popupRect;
 };
 
 #endif /* #ifndef __CPopup_h__ */

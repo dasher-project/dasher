@@ -93,7 +93,7 @@
 #define IDC_CONTROLBOXES                1160
 #define IDC_FILE_ENCODING               1161
 #define IDC_POPUP_ENABLE				1162
-#define IDC_POPUP_FULLSCREEN			1163
+#define IDC_POPUP_EXTERNAL				1163
 #define IDC_POPUP_ALWAYSTOP				1164
 #define IDC_SPEED_EDIT                  1165
 #define IDC_SPEED_SPIN                  1166

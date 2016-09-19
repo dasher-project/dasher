@@ -71,12 +71,13 @@ public:
 #endif
   bool SupportsClipboard() override { return true; };
   void CopyToClipboard(const std::string &text) override;
+  bool GetWindowSize(int* pTop, int* pLeft, int* pBottom, int* pRight);
   void configurePopupTimer(bool enable);
 private:
   virtual void CreateModules() override;
 
   void ScanDirectory(const Tstring &strMask, std::vector<std::string> &vFileList);
-  bool                    GetWindowSize(int* pTop, int* pLeft, int* pBottom, int* pRight);
+  
   void                    Log();                        // Does the logging
 
   CCanvas *m_pCanvas;

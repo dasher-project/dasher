@@ -28,7 +28,7 @@ Dasher::Settings::bp_table app_boolparamtable[] = {
   { APP_BP_CONFIRM_UNSAVED, "ConfirmUnsavedFiles", Persistence::PERSISTENT, true, "ConfirmUnsavedFiles" },
   { APP_BP_SHOW_TOOLBAR, "ViewToolbar", Persistence::PERSISTENT, true, "ViewToolbar"},
   { APP_BP_POPUP_ENABLE, "PopupEnable", Persistence::PERSISTENT, false, "PopupEnable"},
-  { APP_BP_POPUP_FULL_SCREEN, "PopupFullScreen", Persistence::PERSISTENT, false, "PopupFullScreen"},
+  { APP_BP_POPUP_EXTERNAL_SCREEN, "PopupFullScreen", Persistence::PERSISTENT, false, "PopupFullScreen"},
   { APP_BP_POPUP_INFRONT, "PopupInfront", Persistence::PERSISTENT, false, "PopupInfront"},
 #ifdef WITH_MAEMO
   { APP_BP_SHOW_STATUSBAR, "ViewStatusbar", Persistence::PERSISTENT, false, "ViewStatusbar" },

@@ -451,7 +451,7 @@ void CDasherWindow::Layout() {
       m_pEdit->Move(Width / 2, ToolbarHeight, Width - Width / 2, CanvasHeight);
     }
     m_pEdit->ShowWindow(SW_SHOW);
-	m_pPopup->HandleParameterChange(APP_BP_POPUP_ENABLE); //Checks configuration and shows if enabled
+	m_pPopup->setupPopup(); //Checks configuration and shows if enabled
     m_pSplitter->ShowWindow(SW_HIDE);
     break;
 
@@ -483,7 +483,7 @@ void CDasherWindow::Layout() {
       m_pSplitter->Move(SplitterY, Width);
     }
     m_pEdit->ShowWindow(SW_SHOW);
-	m_pPopup->HandleParameterChange(APP_BP_POPUP_ENABLE); //Checks configuration and shows if enabled
+	m_pPopup->setupPopup(); //Checks configuration and shows if enabled
     m_pSplitter->ShowWindow(SW_SHOW);
     if (m_bSizeRestored)
       m_pAppSettings->SetLongParameter(APP_LP_EDIT_SIZE, EditHeight);
