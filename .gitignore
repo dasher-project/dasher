@@ -45,3 +45,4 @@ Src/Win32/Dasher_vc2013.VC.db
 Data/Help/Win32/Dasher.chm
 Src/Win32/Dasher.VC.db
 *.opendb
+Src/Win32/UpgradeLog.htm

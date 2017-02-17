@@ -229,7 +229,6 @@
     <ClInclude Include="DynamicButtons.h" />
     <ClInclude Include="DynamicFilter.h" />
     <ClInclude Include="Event.h" />
-    <ClInclude Include="EventHandler.h" />
     <ClInclude Include="ExpansionPolicy.h" />
     <ClInclude Include="FileLogger.h" />
     <ClInclude Include="FileWordGenerator.h" />
