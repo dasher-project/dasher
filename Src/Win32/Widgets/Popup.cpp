@@ -89,7 +89,6 @@ void CPopup::setupPopup() {
 
 		//If enabled, show and start the auto update timer
 		if (m_pAppSettings->GetBoolParameter(APP_BP_POPUP_ENABLE) == true) {
-			OutputDebugString(L"Popup: Show on Load\n");
 			//Show the Popup
 			ShowWindow(SW_SHOW);
 			//Fire the update timer
@@ -159,15 +158,12 @@ void CPopup::HandleParameterChange(int iParameter) {
     SetFont(m_pAppSettings->GetStringParameter(APP_SP_POPUP_FONT), m_pAppSettings->GetLongParameter(APP_LP_POPUP_FONT_SIZE));
     break;
   case APP_BP_POPUP_ENABLE:
-	 OutputDebugString(L"Request to show/hide popup"); //Log Updated Display to console
 	if(m_pAppSettings->GetBoolParameter(APP_BP_POPUP_ENABLE) == true){
-	  OutputDebugString(L"..show\n");
 	  ShowWindow(SW_SHOW);
 	  CDasher* dasher = (CDasher*)m_pDasherInterface; //Cast for concrete implementation
 	  dasher->configurePopupTimer(true);
 	}
 	else {
-	  OutputDebugString(L"..hide.\n"); //Log Updated Display to console
 	  ShowWindow(SW_HIDE);
 	}		
     break;
@@ -184,30 +180,23 @@ void CPopup::HandleParameterChange(int iParameter) {
 //Forces external monitor usages (fi exists)
 bool CPopup::processToolbarButtonPress() {
 	bool popupEnabled = false;
-	OutputDebugString(L"Toolbar--> Request to show/hide popup"); //Log Updated Display to console
 	popupEnabled = m_pAppSettings->GetBoolParameter(APP_BP_POPUP_ENABLE);
 	//Action depends on current status
 	if (popupEnabled == false) {
-		OutputDebugString(L"..on..");
 		//Quick button possitions fully on the external monitor, if monitor exists
 		LPRECT popupDisplayRect;
 		if (isExtMonitorDetected()) {
-			OutputDebugString(L"..display\n");
 			popupDisplayRect = &m_externalMonitorRect;
 		}
 		else {
-			OutputDebugString(L"..popup\n");
 			popupDisplayRect = &m_popupRect;
 		}
 		MoveWindow(popupDisplayRect);
 	}
-	else {
-		OutputDebugString(L"..Hide Popup\n"); //Log Updated Display to console
-	}
-
+	
 	//Update the state flag
 	popupEnabled = !popupEnabled;
-	m_pAppSettings->SetBoolParameter(APP_BP_POPUP_ENABLE, popupEnabled);
+	m_pAppSettings->SetBoolParameter(APP_BP_POPUP_ENABLE, popupEnabled); //Setting the parameter triggers action
 	//Return the current state
 	return popupEnabled;
 }
