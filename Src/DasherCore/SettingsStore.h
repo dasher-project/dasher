@@ -61,7 +61,7 @@ public:
   void AddParameters(const Settings::bp_table* table, size_t count);
   void AddParameters(const Settings::lp_table* table, size_t count);
   void AddParameters(const Settings::sp_table* table, size_t count);
-  Observable<int>& PreSetObservable() { return pre_set_observable_; }
+  Observable<CParameterChange>& PreSetObservable() { return pre_set_observable_; }
 
 protected:
     ///Loads all (persistent) prefs from disk, using+storing default values when no
@@ -125,7 +125,7 @@ private:
   };
 
   std::unordered_map<int, Parameter> parameters_;
-  Observable<int> pre_set_observable_;
+  Observable<CParameterChange> pre_set_observable_;
 };
   /// Superclass for anything that wants to use/access/store persistent settings.
   /// (The nearest thing remaining to the old CDasherComponent,

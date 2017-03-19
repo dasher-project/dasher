@@ -527,11 +527,11 @@ protected:
   /// (TODO _could_ move these into CSettingsUser, but that seems uglier given so few clients?)
   CSettingsStore * const m_pSettingsStore;
 
-  class CPreSetObserver : public Observer<int> {
+  class CPreSetObserver : public Observer<CParameterChange> {
     CSettingsStore& m_settingsStore;
   public:
     CPreSetObserver(CSettingsStore& settingsStore) : m_settingsStore(settingsStore) {};
-    void HandleEvent(int evt) override;
+    void HandleEvent(CParameterChange evt) override;
   };
 
   CPreSetObserver m_preSetObserver;

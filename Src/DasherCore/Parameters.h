@@ -90,6 +90,19 @@ enum {
 
 enum class Persistence { PERSISTENT, EPHEMERAL };
 
+struct CParameterChange {
+    CParameterChange(int parameter, bool value)
+        :iParameter(parameter), bool_value(value) {}
+    CParameterChange(int parameter, long value)
+        :iParameter(parameter), long_value(value) {}
+    CParameterChange(int parameter, const char* value)
+        :iParameter(parameter),string_value(value){}
+    int iParameter;
+    bool bool_value = false;
+    long long_value = 0;
+    const char* string_value = "";
+};
+
 namespace Dasher {
   ///Namespace containing all static (i.e. fixed/constant) data about
   /// settings, that is _not_ dependent on the storage mechanism,
