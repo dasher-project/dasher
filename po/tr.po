@@ -1107,8 +1107,8 @@ msgid "Version"
 msgstr "Versiyon"
 
 #: Src/Gtk2/DasherAppSettings.cpp:161
-msgid "License GPL 2+"
-msgstr "Lisans GPL 2+"
+msgid "License"
+msgstr ""
 
 #: Src/Gtk2/dasher_editor.cpp:812 Src/Gtk2/dasher_main.cpp:550
 #: Src/Gtk2/dasher_main.cpp:885
