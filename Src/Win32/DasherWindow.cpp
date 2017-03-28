@@ -167,12 +167,12 @@ void CDasherWindow::Show(int nCmdShow) {
 }
 //This starts a brute force timer to update the popup window display
 void CDasherWindow::configurePopupTimer(bool enable){
-	if (enable) {
-		::SetTimer(hWnd, 2, 1270, TIMERPROC(NULL));
-	}
-	else {
-		::KillTimer(hWnd, 2);
-	}
+  if (enable) {
+    ::SetTimer(hWnd, 2, 1270, TIMERPROC(NULL));
+  }
+  else {
+    ::KillTimer(hWnd, 2);
+  }
 }
 void CDasherWindow::HandleParameterChange(int iParameter) {
   switch (iParameter) {
@@ -237,8 +237,8 @@ LRESULT CDasherWindow::OnCommand(UINT message, WPARAM wParam, LPARAM lParam, BOO
     return 0;
   }
   case ID_QUICK_POPUP: {
-	m_pPopup->processToolbarButtonPress();
-	return 0;
+    m_pPopup->processToolbarButtonPress();
+    return 0;
   }
   case ID_HELP_CONTENTS:
     HtmlHelp(m_hWnd, L"Dasher.chm", HH_DISPLAY_INDEX, NULL);
@@ -394,11 +394,11 @@ LRESULT CDasherWindow::OnOther(UINT message, WPARAM wParam, LPARAM lParam, BOOL&
 }
 /* Handles Timer Callbacks*/
 LRESULT CDasherWindow::OnTimer(UINT message, WPARAM wParam, LPARAM lParam, BOOL& bHandled) {
-	//Brute force timer to update the external display with a copy of the current Dasher edit display
-	//Timer should only be in use (created) by the Popup (when enabled)
-	string currentOutput = m_pEdit->getOutput();
-	m_pPopup->updateDisplay(currentOutput);
-	return false;
+  //Brute force timer to update the external display with a copy of the current Dasher edit display
+  //Timer should only be in use (created) by the Popup (when enabled)
+  string currentOutput = m_pEdit->getOutput();
+  m_pPopup->updateDisplay(currentOutput);
+  return false;
 }
 
 
@@ -455,7 +455,7 @@ void CDasherWindow::Layout() {
       m_pEdit->Move(Width / 2, ToolbarHeight, Width - Width / 2, CanvasHeight);
     }
     m_pEdit->ShowWindow(SW_SHOW);
-	m_pPopup->setupPopup(); //Checks configuration and shows if enabled
+    m_pPopup->setupPopup(); //Checks configuration and shows if enabled
     m_pSplitter->ShowWindow(SW_HIDE);
     break;
 
@@ -487,7 +487,7 @@ void CDasherWindow::Layout() {
       m_pSplitter->Move(SplitterY, Width);
     }
     m_pEdit->ShowWindow(SW_SHOW);
-	m_pPopup->setupPopup(); //Checks configuration and shows if enabled
+    m_pPopup->setupPopup(); //Checks configuration and shows if enabled
     m_pSplitter->ShowWindow(SW_SHOW);
     if (m_bSizeRestored)
       m_pAppSettings->SetLongParameter(APP_LP_EDIT_SIZE, EditHeight);

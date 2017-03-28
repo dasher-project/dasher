@@ -19,7 +19,7 @@
 
 class CPopupPage:public CPrefsPageBase {
 public:
-	CPopupPage(HWND Parent, CAppSettings *pAppSettings);
+  CPopupPage(HWND Parent, CAppSettings *pAppSettings);
   LRESULT WndProc(HWND Window, UINT message, WPARAM wParam, LPARAM lParam);
 
 private:

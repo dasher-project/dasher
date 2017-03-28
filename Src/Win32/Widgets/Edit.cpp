@@ -160,12 +160,14 @@ void CEdit::SetDirty() {
   m_dirty = true;
   m_FilenameGUI->SetDirty(true);
 }
+
 std::string CEdit::getOutput() {
-	CString displayText;
-	GetWindowText(displayText);
-	std::wstring s(displayText);
-	return WinUTF8::wstring_to_UTF8string(s.c_str());
+  CString displayText;
+  GetWindowText(displayText);
+  std::wstring s(displayText);
+  return WinUTF8::wstring_to_UTF8string(s.c_str());
 }
+
 void CEdit::TNew(const Tstring &filename) {
   // TODO: Send a message to the parent to say that the buffer has
   // changed (as in the Linux version).

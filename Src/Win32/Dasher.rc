@@ -256,12 +256,12 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Dialog"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-	GROUPBOX        "Dasher Popup:", IDC_STATIC, 7, 7, 180, 50
-	CONTROL         "Enable Popup Window", IDC_POPUP_ENABLE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 12, 18, 110, 10
-	CONTROL         "Use External Monitor", IDC_POPUP_EXTERNAL, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 12, 30, 110, 10
-	CONTROL         "Always On Top", IDC_POPUP_ALWAYSTOP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 12, 42, 110, 10
-	GROUPBOX        "Popup Style:", IDC_STATIC, 7, 60, 180, 40
-	PUSHBUTTON      "Change Font", IDC_DFONT_BUTTON, 12, 75, 166, 14
+    GROUPBOX        "Dasher Popup:", IDC_STATIC, 7, 7, 180, 50
+    CONTROL         "Enable Popup Window", IDC_POPUP_ENABLE, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 12, 18, 110, 10
+    CONTROL         "Use External Monitor", IDC_POPUP_EXTERNAL, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 12, 30, 110, 10
+    CONTROL         "Always On Top", IDC_POPUP_ALWAYSTOP, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 12, 42, 110, 10
+    GROUPBOX        "Popup Style:", IDC_STATIC, 7, 60, 180, 40
+    PUSHBUTTON      "Change Font", IDC_DFONT_BUTTON, 12, 75, 166, 14
 END
 
 IDD_MODULESETTINGS DIALOGEX 0, 0, 309, 177
@@ -335,12 +335,12 @@ BEGIN
         BOTTOMMARGIN, 170
     END
 	
-	IDS_PREFS_POPUP, DIALOG
-	BEGIN
-		LEFTMARGIN, 7
-		RIGHTMARGIN, 374
-		TOPMARGIN, 7
-		BOTTOMMARGIN, 231
+    IDS_PREFS_POPUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
 	END
 END
 #endif    // APSTUDIO_INVOKED
@@ -503,13 +503,13 @@ BEGIN
     IDS_UNTITLED_FILE       "Untitled"
     IDS_UNSAVED_CHANGES     "Unsaved changes"
     IDS_PREFS_LM            "Application"
-	IDS_PREFS_POPUP			"External Display"
+    IDS_PREFS_POPUP         "External Display"
     IDS_ERR_SOCKET_TITLE    "Dasher Socket Input error"
 END
 
 STRINGTABLE
 BEGIN
-	IDC_POPUP_QUICK			"Popup"
+    IDC_POPUP_QUICK         "Popup"
 END
 
 

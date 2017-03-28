@@ -84,34 +84,26 @@ class CPopup : public ATL::CWindowImpl<CPopup> {
   
  private:  
   Dasher::CDasherInterfaceBase *m_pDasherInterface;
-  bool m_setup;
-  
-  HWND Parent;
-  HWND m_popup;
-  
-  HWND m_hTarget;
-
-  
-  HFONT m_Font;
-  
-  std::string m_Output;         // UTF-8 to go to training file
-  
-  HWND targetwindow;
-  
-  void InsertText(Tstring InsertText);  // add symbol to edit control
-  
   CAppSettings *m_pAppSettings;
 
+  bool m_setup;
+  HWND Parent;
+  HWND m_popup;
+  HWND m_hTarget;
+  HFONT m_Font;
+  HWND targetwindow;
+  std::string m_Output;         // UTF-8 to go to training file
+  RECT m_dasherWindwowRect;
+  RECT m_externalMonitorRect;
+  RECT m_popupRect; //The current rect being used for the popup
+
+  void InsertText(Tstring InsertText);  // add symbol to edit control
   RECT getInitialWindow();
   void calculateDisplayProperties();
   void positionPopup();
   void getDasherWidnowInfo();
   void getMonitorInfo();
   bool isExtMonitorDetected();
-
-  RECT m_dasherWindwowRect;
-  RECT m_externalMonitorRect;
-  RECT m_popupRect; //The current rect being used for the popup
   
 };
 
