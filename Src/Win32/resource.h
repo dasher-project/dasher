@@ -36,7 +36,7 @@
 #define IDD_APPEARANCEPAGE              178
 #define IDD_APPPAGE                     179
 #define IDD_MODULESETTINGS              180
-#define IDS_PREFS_POPUP					181
+#define IDS_PREFS_POPUP                 181
 #define IDD_STATUSBAR                   182
 #define IDC_INPUT_LIST                  1008
 #define IDC_CONTROL_LIST                1009
@@ -92,15 +92,15 @@
 #define IDC_CHECK5                      1157
 #define IDC_CONTROLBOXES                1160
 #define IDC_FILE_ENCODING               1161
-#define IDC_POPUP_ENABLE				1162
-#define IDC_POPUP_EXTERNAL				1163
-#define IDC_POPUP_ALWAYSTOP				1164
+#define IDC_POPUP_ENABLE                1162
+#define IDC_POPUP_EXTERNAL              1163
+#define IDC_POPUP_ALWAYSTOP             1164
 #define IDC_SPEED_EDIT                  1165
 #define IDC_SPEED_SPIN                  1166
 #define IDC_ALPHABET_COMBO              1167
 
-#define IDC_POPUP_QUICK					1170
-#define ID_QUICK_POPUP					1171
+#define IDC_POPUP_QUICK                 1170
+#define ID_QUICK_POPUP                  1171
 
 #define ID_EDIT_SELECTALL               32775
 #define ID_HELP_CONTENTS                32776
