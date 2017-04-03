@@ -153,3 +153,12 @@ void option_help()
     g_print("%-30s %-12s  %s\n", stringparamtable[i].regName, stringparamtable[i].defaultValue, stringparamtable[i].humanReadable);
   }
 }
+
+void option_version()
+{
+  g_print("\n");
+  // Note to translators: This is the version keyword showing for the command line option "--version"
+  g_print("%-30s %-30s \n", _("Version"), PACKAGE_VERSION);
+  // Note to translators: This is the license keyword showing for the command line option "--version"
+  g_print("%-30s %-30s\n", _("License"), "GPL 2+");
+}

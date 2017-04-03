@@ -204,13 +204,14 @@ CDasherInterfaceBase::~CDasherInterfaceBase() {
 
   delete m_pFramerate;
 }
-void CDasherInterfaceBase::CPreSetObserver::HandleEvent(int iParameter) {
-  switch(iParameter) {
+
+void CDasherInterfaceBase::CPreSetObserver::HandleEvent(CParameterChange d) {
+  switch(d.iParameter) {
   case SP_ALPHABET_ID:
-    string value = m_settingsStore.GetStringParameter(SP_ALPHABET_ID);
+    string value = d.string_value;
     // Cycle the alphabet history
     vector<string> newHistory;
-    newHistory.push_back(value);
+    newHistory.push_back(m_settingsStore.GetStringParameter(SP_ALPHABET_ID));
     string v;
     if ((v = m_settingsStore.GetStringParameter(SP_ALPHABET_1)) != value)
       newHistory.push_back(v);

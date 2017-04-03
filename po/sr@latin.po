@@ -40,9 +40,8 @@ msgstr "Unosite tekst bez upotrebe tastature"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: Data/dasher.desktop.in.in:8
-#| msgid "Dasher"
 msgid "dasher"
-msgstr "jurišnik"
+msgstr "dasher"
 
 #: Data/GUI/dashermaemofullscreen.ui:10 Data/GUI/dasher.traditional.ui:17
 msgid "_File"

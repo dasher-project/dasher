@@ -1275,6 +1275,23 @@ your writing speed.</property>
 												<property name="position">7</property>
 											</packing>
 										</child>
+<child>
+                      <object class="GtkCheckButton" id="confirm_unsaved_files">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">2</property>
+                        <property name="label" translatable="yes">Confirm unsaved files</property>
+                        <property name="use_underline">True</property>
+                        <property name="draw_indicator">True</property>
+                        <signal handler="generic_bool_changed" name="clicked"/>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">8</property>
+                      </packing>
+                    </child>
+
                                       </object>
                                     </child>
                                   </object>

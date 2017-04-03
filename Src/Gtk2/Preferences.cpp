@@ -50,7 +50,8 @@ BoolTranslation sBoolTranslationTable[] = {
   {BP_LM_ADAPTIVE, "cb_adaptive", NULL},
   {BP_COPY_ALL_ON_STOP,"copy_all_on_stop",NULL},
   {BP_SPEAK_ALL_ON_STOP,"speak_all_on_stop",NULL},
-  {BP_SPEAK_WORDS,"speak_words",NULL}
+  {BP_SPEAK_WORDS,"speak_words",NULL},
+  {APP_BP_CONFIRM_UNSAVED, "confirm_unsaved_files", NULL}
 };
 
 #endif

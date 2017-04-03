@@ -141,7 +141,7 @@ void CSettingsStore::SetBoolParameter(int iParameter, bool bValue) {
   if(bValue == GetBoolParameter(iParameter))
     return;
 
-  pre_set_observable_.DispatchEvent(iParameter);
+  pre_set_observable_.DispatchEvent(CParameterChange(iParameter,bValue));
 
   // Set the value
   p->second.bool_value = bValue;
@@ -162,7 +162,7 @@ void CSettingsStore::SetLongParameter(int iParameter, long lValue) {
   if(lValue == GetLongParameter(iParameter))
     return;
 
-  pre_set_observable_.DispatchEvent(iParameter);
+  pre_set_observable_.DispatchEvent(CParameterChange(iParameter, lValue));
 
   // Set the value
   p->second.long_value = lValue;
@@ -183,7 +183,7 @@ void CSettingsStore::SetStringParameter(int iParameter, const std::string sValue
   if(sValue == GetStringParameter(iParameter))
     return;
 
-  pre_set_observable_.DispatchEvent(iParameter);
+  pre_set_observable_.DispatchEvent(CParameterChange(iParameter, sValue.c_str()));
 
   // Set the value
   p->second.string_value = sValue;

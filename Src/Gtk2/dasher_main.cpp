@@ -911,6 +911,12 @@ static void dasher_main_command_quit(DasherMain *pSelf) {
 
   GtkWidget *pDialogue = NULL;
   dasher_main_save_state(pSelf);
+
+  if (!pPrivate->pAppSettings->GetBool(APP_BP_CONFIRM_UNSAVED)) {
+    gtk_main_quit();
+    return;
+  }
+
   if(dasher_editor_file_changed(pPrivate->pEditor)) {
 // XXX PRLW: Just open the save dialogue box.
 #if 0

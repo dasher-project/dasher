@@ -81,5 +81,5 @@ private:
 };
 
 void option_help();
-
+void option_version();
 #endif

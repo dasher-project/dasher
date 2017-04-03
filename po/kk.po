@@ -6,611 +6,556 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=dasher&component=general\n"
-"POT-Creation-Date: 2010-08-18 15:09+0000\n"
-"PO-Revision-Date: 2010-09-15 16:19+0600\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=dasher&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-01 16:47+0000\n"
+"PO-Revision-Date: 2017-03-12 08:39+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Poedit-Language: Kazakh\n"
-"X-Poedit-Country: KAZAKHSTAN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.12\n"
 
 #. Note to translators: This is the name of the dasher program as it appears
 #. in a window title.
-#: ../Data/dasher.desktop.in.in.h:1
-#: ../Data/GUI/dasher.compose.ui.h:6
-#: ../Data/GUI/dasher.direct.ui.h:2
-#: ../Data/GUI/dasher.fullscreen.ui.h:1
-#: ../Data/GUI/dasher.gameWIP.ui.h:6
-#: ../Data/GUI/dasher.traditional.ui.h:6
-#: ../Data/GUI/dashermaemo.ui.h:1
-#: ../Data/GUI/dashermaemofullscreen.ui.h:2
-#: ../Src/Gtk2/dasher_main.cpp:895
+#: Data/dasher.desktop.in.in:3 Data/GUI/dashermaemofullscreen.ui:174
+#: Data/GUI/dashermaemo.ui:7 Data/GUI/dasher.traditional.ui:196
+#: Src/Gtk2/dasher_main.cpp:867
 msgid "Dasher"
 msgstr ""
 
-#: ../Data/dasher.desktop.in.in.h:2
-msgid "Enter text without a keyboard"
-msgstr ""
-
-#: ../Data/dasher.desktop.in.in.h:3
+#: Data/dasher.desktop.in.in:4
 msgid "Predictive text entry"
 msgstr ""
 
-#: ../Data/GUI/dasher.compose.ui.h:1
-msgid "A_ppend to file"
+#: Data/dasher.desktop.in.in:5
+msgid "Enter text without a keyboard"
 msgstr ""
 
-#: ../Data/GUI/dasher.compose.ui.h:2
-#: ../Data/GUI/dasher.direct.ui.h:1
-#: ../Data/GUI/dasher.gameWIP.ui.h:2
-#: ../Data/GUI/dasher.traditional.ui.h:2
-msgid "Alphabet:"
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: Data/dasher.desktop.in.in:8
+msgid "dasher"
 msgstr ""
 
-#: ../Data/GUI/dasher.compose.ui.h:3
-#: ../Data/GUI/dasher.gameWIP.ui.h:3
-#: ../Data/GUI/dasher.traditional.ui.h:3
-msgid "Copy"
-msgstr "Көшіру"
-
-#: ../Data/GUI/dasher.compose.ui.h:4
-#: ../Data/GUI/dasher.gameWIP.ui.h:4
-#: ../Data/GUI/dasher.traditional.ui.h:4
-#: ../Data/GUI/dashermaemofullscreen.ui.h:1
-msgid "Copy _All"
-msgstr "Бар_лығын көшіру"
-
-#: ../Data/GUI/dasher.compose.ui.h:5
-#: ../Data/GUI/dasher.gameWIP.ui.h:5
-#: ../Data/GUI/dasher.traditional.ui.h:5
-msgid "Cut"
-msgstr "Қиып алу"
-
-#: ../Data/GUI/dasher.compose.ui.h:7
-msgid "Dasher _Tutorial"
-msgstr ""
-
-#: ../Data/GUI/dasher.compose.ui.h:8
-#: ../Data/GUI/dasher.gameWIP.ui.h:12
-#: ../Data/GUI/dasher.traditional.ui.h:8
-msgid "New file"
-msgstr "Жаңа файл"
-
-#: ../Data/GUI/dasher.compose.ui.h:9
-#: ../Data/GUI/dasher.gameWIP.ui.h:14
-#: ../Data/GUI/dasher.traditional.ui.h:9
-msgid "Open file"
-msgstr "Файлды ашу"
-
-#: ../Data/GUI/dasher.compose.ui.h:10
-#: ../Data/GUI/dasher.gameWIP.ui.h:15
-#: ../Data/GUI/dasher.traditional.ui.h:10
-msgid "Paste"
-msgstr "Кірістіру"
-
-#: ../Data/GUI/dasher.compose.ui.h:11
-#: ../Data/GUI/dasher.direct.ui.h:3
-#: ../Data/GUI/dasher.fullscreen.ui.h:2
-#: ../Data/GUI/dasher.gameWIP.ui.h:16
-#: ../Data/GUI/dasher.traditional.ui.h:11
-#: ../Data/GUI/dashermaemo.ui.h:4
-msgid "Please Wait…"
-msgstr ""
-
-#: ../Data/GUI/dasher.compose.ui.h:12
-msgid "Pr_eferences"
-msgstr "Қа_лаулар"
-
-#: ../Data/GUI/dasher.compose.ui.h:13
-#: ../Data/GUI/dasher.gameWIP.ui.h:20
-#: ../Data/GUI/dasher.traditional.ui.h:15
-msgid "Save file"
-msgstr "Файлды сақтау"
-
-#: ../Data/GUI/dasher.compose.ui.h:14
-#: ../Data/GUI/dasher.gameWIP.ui.h:21
-#: ../Data/GUI/dasher.traditional.ui.h:16
-msgid "Save file as"
-msgstr "Файлды қалайша сақтау"
-
-#: ../Data/GUI/dasher.compose.ui.h:15
-#: ../Data/GUI/dasher.fullscreen.ui.h:3
-#: ../Data/GUI/dasher.gameWIP.ui.h:23
-#: ../Data/GUI/dashermaemo.ui.h:5
-#: ../Data/GUI/dashermaemofullscreen.ui.h:5
-#: ../Src/Gtk2/dasher_editor_internal.cpp:1286
-#: ../Src/Gtk2/dasher_editor_internal.cpp:1320
-#: ../Src/Gtk2/dasher_main.cpp:910
-msgid "Select File"
-msgstr "Файлды таңдау"
-
-#: ../Data/GUI/dasher.compose.ui.h:16
-#: ../Data/GUI/dasher.fullscreen.ui.h:4
-#: ../Data/GUI/dashermaemo.ui.h:6
-#: ../Data/GUI/dashermaemofullscreen.ui.h:6
-msgid "Select Font"
-msgstr "Қаріпті таңдау"
-
-#: ../Data/GUI/dasher.compose.ui.h:17
-#: ../Data/GUI/dasher.direct.ui.h:4
-#: ../Data/GUI/dasher.gameWIP.ui.h:24
-#: ../Data/GUI/dasher.traditional.ui.h:17
-msgid "Speed:"
-msgstr "Жылдамдық:"
-
-#: ../Data/GUI/dasher.compose.ui.h:18
-#: ../Data/GUI/dashermaemofullscreen.ui.h:8
-msgid "_About"
-msgstr "О_сы туралы"
-
-#: ../Data/GUI/dasher.compose.ui.h:19
-msgid "_Contents"
-msgstr "Құра_масы"
-
-#: ../Data/GUI/dasher.compose.ui.h:20
-#: ../Data/GUI/dasher.gameWIP.ui.h:27
-#: ../Data/GUI/dasher.traditional.ui.h:20
-#: ../Data/GUI/dashermaemofullscreen.ui.h:11
-msgid "_Edit"
-msgstr "Тү_зету"
-
-#: ../Data/GUI/dasher.compose.ui.h:21
-#: ../Data/GUI/dasher.gameWIP.ui.h:28
-#: ../Data/GUI/dasher.traditional.ui.h:21
-#: ../Data/GUI/dashermaemofullscreen.ui.h:13
+#: Data/GUI/dashermaemofullscreen.ui:10 Data/GUI/dasher.traditional.ui:17
 msgid "_File"
 msgstr "_Файл"
 
-#: ../Data/GUI/dasher.compose.ui.h:22
-#: ../Data/GUI/dasher.gameWIP.ui.h:29
-#: ../Data/GUI/dasher.traditional.ui.h:22
-#: ../Data/GUI/dashermaemofullscreen.ui.h:14
+#: Data/GUI/dashermaemofullscreen.ui:30 Data/GUI/dasher.traditional.ui:71
+msgid "_Edit"
+msgstr "Тү_зету"
+
+#: Data/GUI/dashermaemofullscreen.ui:57 Data/GUI/dasher.traditional.ui:90
+msgid "Copy _All"
+msgstr "Бар_лығын көшіру"
+
+#: Data/GUI/dashermaemofullscreen.ui:64
+msgid "_Options"
+msgstr "Опц_иялар"
+
+#: Data/GUI/dashermaemofullscreen.ui:77
+msgid "_Edit Font"
+msgstr ""
+
+#: Data/GUI/dashermaemofullscreen.ui:84
+msgid "_Dasher Font"
+msgstr ""
+
+#: Data/GUI/dashermaemofullscreen.ui:91
+msgid "_Dasher Font Size"
+msgstr ""
+
+#: Data/GUI/dashermaemofullscreen.ui:98
+msgid "Normal"
+msgstr "Қалыпты"
+
+#: Data/GUI/dashermaemofullscreen.ui:107
+msgid "Large"
+msgstr "Үлкен"
+
+#: Data/GUI/dashermaemofullscreen.ui:116
+msgid "Very Large"
+msgstr "Өте үлкен"
+
+#: Data/GUI/dashermaemofullscreen.ui:123
+msgid "_Reset fonts"
+msgstr ""
+
+#: Data/GUI/dashermaemofullscreen.ui:130 Data/GUI/dasher.traditional.ui:112
 msgid "_Help"
 msgstr "_Көмек"
 
-#: ../Data/GUI/dasher.compose.ui.h:23
-msgid "_Import Training Text"
-msgstr ""
+#: Data/GUI/dashermaemofullscreen.ui:136
+msgid "_About"
+msgstr "О_сы туралы"
 
-#: ../Data/GUI/dasher.gameWIP.ui.h:1
-#: ../Data/GUI/dasher.traditional.ui.h:1
-msgid "A_ppend to file…"
-msgstr ""
+#: Data/GUI/dashermaemofullscreen.ui:277 Data/GUI/dashermaemofullscreen.ui:441
+#: Data/GUI/dashermaemofullscreen.ui:477 Data/GUI/dashermaemofullscreen.ui:513
+#: Data/GUI/dashermaemofullscreen.ui:549 Data/GUI/dashermaemo.ui:255
+#: Data/GUI/dashermaemo.ui:419 Data/GUI/dashermaemo.ui:455
+#: Data/GUI/dashermaemo.ui:491 Data/GUI/dashermaemo.ui:527
+#: Src/Gtk2/dasher_editor.cpp:809 Src/Gtk2/dasher_editor.cpp:843
+#: Src/Gtk2/dasher_main.cpp:882
+msgid "Select File"
+msgstr "Файлды таңдау"
 
-#: ../Data/GUI/dasher.gameWIP.ui.h:7
-msgid "Demo!"
-msgstr ""
+#: Data/GUI/dashermaemofullscreen.ui:313 Data/GUI/dashermaemofullscreen.ui:377
+#: Data/GUI/dashermaemo.ui:291 Data/GUI/dashermaemo.ui:355
+msgid "Select Font"
+msgstr "Қаріпті таңдау"
 
-#: ../Data/GUI/dasher.gameWIP.ui.h:8
-msgid "Full Demo"
-msgstr ""
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:9
-#: ../Data/GUI/dasher.traditional.ui.h:7
-msgid "Help"
-msgstr "Көмек"
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:10
-msgid "Launch Dasher Game & Demo mode!"
-msgstr ""
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:11
-msgid "Level:"
-msgstr "Деңгейі:"
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:13
-msgid "New sentence"
-msgstr ""
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:17
-#: ../Data/GUI/dasher.traditional.ui.h:12
-msgid "Pr_eferences…"
-msgstr ""
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:18
-#: ../Data/GUI/dasher.traditional.ui.h:13
-msgid "Preferences"
-msgstr "Қалаулар"
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:19
-#: ../Data/GUI/dasher.traditional.ui.h:14
-#: ../Src/Gtk2/dasher_main.cpp:988
-msgid "Quit"
-msgstr "Шығу"
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:22
-msgid "Score:"
-msgstr "Нәтиже:"
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:25
-#: ../Data/GUI/dasher.traditional.ui.h:18
-msgid "_About…"
-msgstr ""
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:26
-#: ../Data/GUI/dasher.traditional.ui.h:19
-msgid "_Contents…"
-msgstr ""
-
-#: ../Data/GUI/dasher.gameWIP.ui.h:30
-#: ../Data/GUI/dasher.traditional.ui.h:23
-msgid "_Import Training Text…"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:1
-msgid "Actions"
-msgstr "Әрекеттер"
-
-#: ../Data/GUI/dasher.preferences.ui.h:2
-#: ../Data/GUI/dashermaemo.preferences.ui.h:1
-msgid "Adaptation"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:3
-#: ../Data/GUI/dashermaemo.preferences.ui.h:2
-msgid "Alphabet Selection"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:4
-msgid "Appearance Options"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:5
-msgid "Application Options"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:6
-msgid "Application Style"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:7
-msgid "Colour Scheme"
-msgstr ""
-
-#. The way in which you would like to control dasher, e.g., using buttons for up/down, buttons for select, etc.
-#: ../Data/GUI/dasher.preferences.ui.h:9
-msgid "Control Style"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:10
-msgid "Dasher Font"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:11
-msgid "Direction"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:12
-msgid "Editor Font"
-msgstr "Түзетуші қарібі"
-
-#: ../Data/GUI/dasher.preferences.ui.h:13
-msgid "Input Device"
-msgstr "Енгізу құрылғысы"
-
-#: ../Data/GUI/dasher.preferences.ui.h:14
-#: ../Data/GUI/dashermaemo.preferences.ui.h:5
-msgid "Language Model"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:15
-#: ../Data/GUI/dashermaemo.preferences.ui.h:7
-msgid "Smoothing"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:16
-#: ../Data/GUI/dashermaemo.preferences.ui.h:8
-msgid "Speed"
-msgstr "Жылдамдық"
-
-#: ../Data/GUI/dasher.preferences.ui.h:17
-msgid "Starting and Stopping"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:18
-msgid "A_pplication"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:19
-#: ../Data/GUI/dashermaemo.preferences.ui.h:9
-msgid "Adapt speed automatically"
-msgstr ""
-
-#. The default display orientation for the selected alphabet, i.e., left to right for English, right to left for Arabic, etc.
-#: ../Data/GUI/dasher.preferences.ui.h:21
-#: ../Data/GUI/dashermaemo.preferences.ui.h:11
-msgid "Alphabet Default"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:22
-#: ../Data/GUI/dashermaemo.preferences.ui.h:12
-msgid "Bottom to Top"
-msgstr "Үстінен астыға"
-
-#. Abbreviation for Control Style
-#: ../Data/GUI/dasher.preferences.ui.h:24
-msgid "C_ontrol"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:25
-msgid "Centre circle"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:26
-msgid "Composition"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:27
-msgid "Control mode"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:28
-#: ../Data/GUI/dashermaemo.preferences.ui.h:15
-msgid "Custom"
-msgstr "Таңдауыңызша"
-
-#: ../Data/GUI/dasher.preferences.ui.h:29
-#: ../Data/GUI/dashermaemo.preferences.ui.h:16
-msgid "Custom colour scheme:"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:30
-#: ../Data/GUI/dashermaemo.preferences.ui.h:17
+#: Data/GUI/dashermaemo.preferences.ui:21 Data/GUI/dasher.preferences.ui:34
 msgid "Dasher Preferences"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:31
-msgid "Direct entry"
+#: Data/GUI/dashermaemo.preferences.ui:48 Data/GUI/dasher.preferences.ui:58
+msgid "Alphabet Selection"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:32
-msgid "Dock application window"
+#: Data/GUI/dashermaemo.preferences.ui:109
+msgid "Color Scheme"
+msgstr "Түстер схемасы"
+
+#: Data/GUI/dashermaemo.preferences.ui:132 Data/GUI/dasher.preferences.ui:846
+msgid "Custom colour scheme:"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:33
-msgid "Draw box outlines"
+#: Data/GUI/dashermaemo.preferences.ui:180
+msgid "Alphabet"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:34
-msgid "Draw line between crosshairs and mouse"
+#: Data/GUI/dashermaemo.preferences.ui:200 Data/GUI/dasher.preferences.ui:615
+msgid "Speed"
+msgstr "Жылдамдық"
+
+#: Data/GUI/dashermaemo.preferences.ui:224 Data/GUI/dasher.preferences.ui:645
+msgid "Adapt speed automatically"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:35
-msgid "Full Screen"
-msgstr "Толық экранға"
+#. The way in which you would like to control dasher, e.g., using buttons for up/down, buttons for select, etc.
+#: Data/GUI/dashermaemo.preferences.ui:261
+msgid "Control"
+msgstr "Басқару элементі"
 
-#: ../Data/GUI/dasher.preferences.ui.h:36
-msgid "Increase line thickness"
+#: Data/GUI/dashermaemo.preferences.ui:285
+msgid "Display Size"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:37
-#: ../Data/GUI/dashermaemo.preferences.ui.h:19
-msgid "Japanese"
-msgstr "Жапон"
-
-#: ../Data/GUI/dasher.preferences.ui.h:38
-#: ../Data/GUI/dashermaemo.preferences.ui.h:20
-msgid "Language model adapts as you write."
+#: Data/GUI/dashermaemo.preferences.ui:307
+msgid "Enlarge input window"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:39
-msgid "Large font "
-msgstr "Үлкен қаріп"
+#: Data/GUI/dashermaemo.preferences.ui:338
+msgid "Orientation"
+msgstr "Бағдары"
 
-#: ../Data/GUI/dasher.preferences.ui.h:40
-#: ../Data/GUI/dashermaemo.preferences.ui.h:21
+#. The default display orientation for the selected alphabet, i.e., left to right for English, right to left for Arabic, etc.
+#: Data/GUI/dashermaemo.preferences.ui:360 Data/GUI/dasher.preferences.ui:344
+msgid "Alphabet Default"
+msgstr ""
+
+#: Data/GUI/dashermaemo.preferences.ui:375
+msgid "Custom"
+msgstr "Таңдауыңызша"
+
+#: Data/GUI/dashermaemo.preferences.ui:399
 msgid "Left to Right"
 msgstr "Солдан оңға"
 
-#. PPM = Prediction by Partial Match, a statistical language model.
-#: ../Data/GUI/dasher.preferences.ui.h:42
-#: ../Data/GUI/dashermaemo.preferences.ui.h:22
-msgid "Mixture model (PPM/dictionary)"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:43
-msgid "Options"
-msgstr "Опциялар"
-
-#: ../Data/GUI/dasher.preferences.ui.h:44
-msgid "Pause outside of canvas"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:45
-#: ../Data/GUI/dashermaemo.preferences.ui.h:24
+#: Data/GUI/dashermaemo.preferences.ui:414
 msgid "Right to Left"
 msgstr "Оңнан солға"
 
-#: ../Data/GUI/dasher.preferences.ui.h:46
-msgid "Select Dasher Font"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:47
-msgid "Select Editor Font"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:48
-msgid "Show mouse position"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:49
-msgid "Show speed slider"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:50
-msgid "Show toolbar"
-msgstr "Саймандар панелін көрсету"
-
-#: ../Data/GUI/dasher.preferences.ui.h:51
-msgid "Small font"
-msgstr "Кішкентай қаріп"
-
-#: ../Data/GUI/dasher.preferences.ui.h:52
-msgid "Stand-alone"
-msgstr ""
-
-#. PPM = Prediction by Partial Match, a statistical language model.
-#: ../Data/GUI/dasher.preferences.ui.h:54
-#: ../Data/GUI/dashermaemo.preferences.ui.h:25
-msgid "Standard letter-based PPM"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:55
-msgid "Start on left mouse button"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:56
-msgid "Start on space bar"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:57
-msgid "Start with mouse position:"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:58
-msgid "Timestamp new files"
-msgstr ""
-
-#: ../Data/GUI/dasher.preferences.ui.h:59
-#: ../Data/GUI/dashermaemo.preferences.ui.h:26
+#: Data/GUI/dashermaemo.preferences.ui:431
 msgid "Top to Bottom"
 msgstr "Үстінен астыға"
 
-#: ../Data/GUI/dasher.preferences.ui.h:60
+#: Data/GUI/dashermaemo.preferences.ui:448
+msgid "Bottom to Top"
+msgstr "Үстінен астыға"
+
+#: Data/GUI/dashermaemo.preferences.ui:487
+msgid "View"
+msgstr "Қарау"
+
+#: Data/GUI/dashermaemo.preferences.ui:506 Data/GUI/dasher.preferences.ui:107
+msgid "Language Model"
+msgstr ""
+
+#. PPM = Prediction by Partial Match, a statistical language model.
+#: Data/GUI/dashermaemo.preferences.ui:530 Data/GUI/dasher.preferences.ui:128
+msgid "Standard letter-based PPM"
+msgstr ""
+
+#: Data/GUI/dashermaemo.preferences.ui:544 Data/GUI/dasher.preferences.ui:142
+msgid "Word-based model"
+msgstr ""
+
+#. PPM = Prediction by Partial Match, a statistical language model.
+#: Data/GUI/dashermaemo.preferences.ui:560 Data/GUI/dasher.preferences.ui:158
+msgid "Mixture model (PPM/dictionary)"
+msgstr ""
+
+#: Data/GUI/dashermaemo.preferences.ui:576 Data/GUI/dasher.preferences.ui:174
+msgid "Japanese"
+msgstr "Жапон"
+
+#: Data/GUI/dashermaemo.preferences.ui:609 Data/GUI/dasher.preferences.ui:205
+msgid "Adaptation"
+msgstr ""
+
+#: Data/GUI/dashermaemo.preferences.ui:634 Data/GUI/dasher.preferences.ui:226
+msgid "Language model adapts as you write."
+msgstr ""
+
+#: Data/GUI/dashermaemo.preferences.ui:666 Data/GUI/dasher.preferences.ui:257
+msgid "Smoothing"
+msgstr ""
+
+#: Data/GUI/dashermaemo.preferences.ui:717
+msgid "Prediction"
+msgstr ""
+
+#. Abbreviation for Preferences
+#: Data/GUI/dashermaemo.ui:66
+msgid "P"
+msgstr ""
+
+#: Data/GUI/dashermaemo.ui:563 Data/GUI/dasher.traditional.ui:392
+msgid "Please Wait…"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:26
+msgid "Centre circle"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:29
 msgid "Two box"
 msgstr ""
 
 #. Line wrapping not necessary, but looks better for English
-#: ../Data/GUI/dasher.preferences.ui.h:62
+#: Data/GUI/dasher.preferences.ui:280
 msgid ""
 "Use this control to adjust the relative sizes of the\n"
 "letter boxes. Note that selecting high values will slow\n"
 "your writing speed."
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:65
-msgid "Very large font"
+#: Data/GUI/dasher.preferences.ui:322
+msgid "Direction"
 msgstr ""
 
-#: ../Data/GUI/dasher.preferences.ui.h:66
-#: ../Data/GUI/dashermaemo.preferences.ui.h:28
-msgid "Word-based model"
-msgstr ""
+#. This means that you always want to write left-to-right regardless of the normal direction for the alphabet you are using
+#: Data/GUI/dasher.preferences.ui:359
+msgid "Always Left-to-Right"
+msgstr "Әрқашан солдан оңға"
 
-#: ../Data/GUI/dasher.preferences.ui.h:67
-msgid "_Appearance"
-msgstr "С_ыртқы түрі"
+#: Data/GUI/dasher.preferences.ui:376
+msgid "Always Right-to-Left"
+msgstr "Әрқашан оңнан солға"
 
-#: ../Data/GUI/dasher.preferences.ui.h:68
+#: Data/GUI/dasher.preferences.ui:393
+msgid "Always Top-to-Bottom"
+msgstr "Әрқашан үстінен астыға"
+
+#: Data/GUI/dasher.preferences.ui:410
+msgid "Always Bottom-to-Top"
+msgstr "Әрқашан астынан үстіне"
+
+#: Data/GUI/dasher.preferences.ui:444
 msgid "_Language"
 msgstr "Ті_л"
 
-#. Abbreviation for Preferences
-#: ../Data/GUI/dashermaemo.ui.h:3
-msgid "P"
-msgstr ""
-
-#: ../Data/GUI/dashermaemo.preferences.ui.h:3
-msgid "Color Scheme"
-msgstr ""
-
-#: ../Data/GUI/dashermaemo.preferences.ui.h:4
-#, fuzzy
-msgid "Display Size"
-msgstr "Өлшемін көрсету"
-
-#: ../Data/GUI/dashermaemo.preferences.ui.h:6
-#, fuzzy
-msgid "Orientation"
-msgstr "Бағдар_ы:"
-
-#: ../Data/GUI/dashermaemo.preferences.ui.h:10
-msgid "Alphabet"
-msgstr ""
-
 #. The way in which you would like to control dasher, e.g., using buttons for up/down, buttons for select, etc.
-#: ../Data/GUI/dashermaemo.preferences.ui.h:14
-#, fuzzy
-msgid "Control"
-msgstr "Control-H"
-
-#: ../Data/GUI/dashermaemo.preferences.ui.h:18
-msgid "Enlarge input window"
+#: Data/GUI/dasher.preferences.ui:463
+msgid "Control Style"
 msgstr ""
 
-#: ../Data/GUI/dashermaemo.preferences.ui.h:23
-msgid "Prediction"
+#: Data/GUI/dasher.preferences.ui:510 Data/GUI/dasher.preferences.ui:588
+msgid "Options"
+msgstr "Опциялар"
+
+#: Data/GUI/dasher.preferences.ui:541
+msgid "Input Device"
+msgstr "Енгізу құрылғысы"
+
+#: Data/GUI/dasher.preferences.ui:677
+msgid "Starting and Stopping"
 msgstr ""
 
-#: ../Data/GUI/dashermaemo.preferences.ui.h:27
-msgid "View"
-msgstr "Қарау"
-
-#: ../Data/GUI/dashermaemofullscreen.ui.h:3
-msgid "Large"
-msgstr "Үлкен"
-
-#: ../Data/GUI/dashermaemofullscreen.ui.h:4
-msgid "Normal"
-msgstr "Қалыпты"
-
-#: ../Data/GUI/dashermaemofullscreen.ui.h:7
-msgid "Very Large"
-msgstr "Өте үлкен"
-
-#: ../Data/GUI/dashermaemofullscreen.ui.h:9
-msgid "_Dasher Font"
+#: Data/GUI/dasher.preferences.ui:699
+msgid "Start on left mouse button"
 msgstr ""
 
-#: ../Data/GUI/dashermaemofullscreen.ui.h:10
-msgid "_Dasher Font Size"
+#: Data/GUI/dasher.preferences.ui:714
+msgid "Start on space bar"
 msgstr ""
 
-#: ../Data/GUI/dashermaemofullscreen.ui.h:12
-msgid "_Edit Font"
+#: Data/GUI/dasher.preferences.ui:730
+msgid "Start with mouse position:"
 msgstr ""
 
-#: ../Data/GUI/dashermaemofullscreen.ui.h:15
-msgid "_Options"
-msgstr "Опц_иялар"
+#: Data/GUI/dasher.preferences.ui:771
+msgid "Pause outside of canvas"
+msgstr ""
 
-#: ../Data/GUI/dashermaemofullscreen.ui.h:16
-msgid "_Reset fonts"
+#. Abbreviation for Control Style
+#: Data/GUI/dasher.preferences.ui:805
+msgid "C_ontrol"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:825
+msgid "Colour Scheme"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:898
+msgid "Appearance Options"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:920
+msgid "Show mouse position"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:935
+msgid "Draw line between crosshairs and mouse"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:955
+msgid "Increase line thickness"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:973
+msgid "Draw box outlines"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1003
+msgid "Dasher Font"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1024
+msgid "Select Dasher Font"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1039
+msgid "Small font"
+msgstr "Кішкентай қаріп"
+
+#: Data/GUI/dasher.preferences.ui:1055
+msgid "Large font "
+msgstr "Үлкен қаріп"
+
+#: Data/GUI/dasher.preferences.ui:1072
+msgid "Very large font"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1107
+msgid "_Appearance"
+msgstr "С_ыртқы түрі"
+
+#: Data/GUI/dasher.preferences.ui:1135
+msgid "Application Options"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1157
+msgid "Timestamp new files"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1172
+msgid "Show toolbar"
+msgstr "Саймандар панелін көрсету"
+
+#: Data/GUI/dasher.preferences.ui:1188
+msgid "Show speed slider"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1204
+msgid "Control mode"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1235
+msgid "Copy All on stop"
+msgstr "Барлығын бір уақытта көшіру"
+
+#: Data/GUI/dasher.preferences.ui:1251
+msgid "Speak All on stop"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1267
+msgid "Speak words as you write"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1297
+msgid "Editor Font"
+msgstr "Түзетуші қарібі"
+
+#: Data/GUI/dasher.preferences.ui:1315
+msgid "Select Editor Font"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1343
+msgid "Application Style"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1365
+msgid "Stand-alone"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1380
+msgid "Composition"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1397
+msgid "Direct entry"
+msgstr ""
+
+#: Data/GUI/dasher.preferences.ui:1414
+msgid "Full Screen"
+msgstr "Толық экранға"
+
+#: Data/GUI/dasher.preferences.ui:1454
+msgid "A_pplication"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:23
+msgid "New file"
+msgstr "Жаңа файл"
+
+#: Data/GUI/dasher.traditional.ui:30
+msgid "Open file"
+msgstr "Файлды ашу"
+
+#: Data/GUI/dasher.traditional.ui:37
+msgid "Save file"
+msgstr "Файлды сақтау"
+
+#: Data/GUI/dasher.traditional.ui:44
+msgid "Save file as"
+msgstr "Файлды қалайша сақтау"
+
+#: Data/GUI/dasher.traditional.ui:51
+msgid "A_ppend to file…"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:58
+msgid "_Import Training Text…"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:65 Src/Gtk2/dasher_main.cpp:960
+msgid "Quit"
+msgstr "Шығу"
+
+#: Data/GUI/dasher.traditional.ui:77
+msgid "Cut"
+msgstr "Қиып алу"
+
+#: Data/GUI/dasher.traditional.ui:84
+msgid "Copy"
+msgstr "Көшіру"
+
+#: Data/GUI/dasher.traditional.ui:97
+msgid "Paste"
+msgstr "Кірістіру"
+
+#: Data/GUI/dasher.traditional.ui:104
+msgid "Pr_eferences…"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:105
+msgid "Preferences"
+msgstr "Қалаулар"
+
+#: Data/GUI/dasher.traditional.ui:118
+msgid "_Contents…"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:119
+msgid "Help"
+msgstr "Көмек"
+
+#: Data/GUI/dasher.traditional.ui:127
+msgid "_About…"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:134
+#: Src/DasherCore/DasherInterfaceBase.cpp:795
+msgid "Direct Mode"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:135
+msgid "_Direct Mode"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:141
+msgid "_Game Mode"
+msgstr ""
+
+#: Data/GUI/dasher.traditional.ui:296
+msgid "Speed:"
+msgstr "Жылдамдық:"
+
+#: Data/GUI/dasher.traditional.ui:342
+msgid "Alphabet:"
+msgstr ""
+
+#. think XML_LChar==char, depends on preprocessor variables...
+#. /TRANSLATORS: the first string is the error message from the XML Parser;
+#. / the second is the URL of the file we're trying to read.
+#: Src/DasherCore/AbstractXMLParser.cpp:63
+#, c-format
+msgid "XML Error %s in file %s "
+msgstr ""
+
+#: Src/DasherCore/Alphabet/AlphabetMap.cpp:116
+#, c-format
+msgid ""
+"File ends with incomplete UTF-8 character beginning 0x%x (expecting %i bytes "
+"but only %i)"
+msgstr ""
+
+#: Src/DasherCore/Alphabet/AlphabetMap.cpp:127
+#, c-format
+msgid "Read invalid UTF-8 character 0x%x"
+msgstr ""
+
+#. /TRANSLATORS: the string "GameTextFile" is the name of a setting in gsettings
+#. / (or equivalent), and should not be translated. The %s is the value of that
+#. / setting (this message displayed only if the user has provided a value)
+#: Src/DasherCore/AlphabetManager.cpp:213
+#, c-format
+msgid ""
+"Note: GameTextFile setting specifies game sentences file '%s' but this does "
+"not exist"
 msgstr ""
 
 #. TRANSLATORS: The number of time steps over which to perform the zooming motion in button mode.
-#: ../Src/DasherCore/AlternatingDirectMode.cpp:28
-#: ../Src/DasherCore/ButtonMode.cpp:28
-#: ../Src/DasherCore/CompassMode.cpp:28
-msgid "Zoom steps"
+#: Src/DasherCore/AlternatingDirectMode.cpp:28 Src/DasherCore/ButtonMode.cpp:28
+#: Src/DasherCore/CompassMode.cpp:28 Src/DasherCore/StylusFilter.cpp:11
+msgid "Frames over which to perform zoom"
 msgstr ""
 
 #. TRANSLATORS: Intercept keyboard events for 'special' keys even when the Dasher window doesn't have keyboard focus.
-#: ../Src/DasherCore/AlternatingDirectMode.cpp:30
-#: ../Src/DasherCore/ButtonMode.cpp:39
-#: ../Src/DasherCore/CompassMode.cpp:32
+#: Src/DasherCore/AlternatingDirectMode.cpp:30 Src/DasherCore/ButtonMode.cpp:39
+#: Src/DasherCore/CompassMode.cpp:32
 msgid "Global keyboard grab"
 msgstr ""
 
 #. menu
-#: ../Src/DasherCore/AlternatingDirectMode.cpp:34
+#: Src/DasherCore/AlternatingDirectMode.cpp:34
 msgid "Alternating Direct Mode"
 msgstr ""
 
-#: ../Src/DasherCore/ButtonMode.cpp:29
+#: Src/DasherCore/ButtonMode.cpp:29
 msgid "Scan time in menu mode (0 to not scan)"
 msgstr ""
 
-#: ../Src/DasherCore/ButtonMode.cpp:30
-msgid "Number of boxes"
+#: Src/DasherCore/ButtonMode.cpp:30
+msgid "Number of forward boxes"
 msgstr ""
 
-#: ../Src/DasherCore/ButtonMode.cpp:31
+#: Src/DasherCore/ButtonMode.cpp:31
 msgid "Safety margin"
 msgstr ""
 
@@ -619,339 +564,537 @@ msgstr ""
 #. * however the code seems to use ratio = (129/127)^-r, instead of
 #. * ratio = exp(r/128) used in the design document
 #.
-#: ../Src/DasherCore/ButtonMode.cpp:37
+#: Src/DasherCore/ButtonMode.cpp:37
 msgid "Box non-uniformity"
 msgstr ""
 
-#: ../Src/DasherCore/ClickFilter.cpp:9
+#: Src/DasherCore/ClickFilter.cpp:9
 msgid "Maximum Zoom"
 msgstr ""
 
-#: ../Src/DasherCore/ClickFilter.cpp:10
+#. TRANSLATORS: In click mode, when you click with the mouse, you select
+#. a piece of y-axis to be zoomed to, based on the mouse coordinates. The
+#. "guides" are lines from the mouse position to the edges of the piece of
+#. y-axis.
+#: Src/DasherCore/ClickFilter.cpp:15
 msgid "Draw guides on screen to show area into which a click will zoom"
 msgstr ""
 
-#: ../Src/DasherCore/ClickFilter.cpp:11
+#. TRANSLATORS: As dasher's on-screen coordinate space is not flat,
+#. the straight guide lines should in fact really be curved. This option
+#. draws the guides as correct, though possibly more confusing, curves.
+#: Src/DasherCore/ClickFilter.cpp:19
 msgid "Curve lines to follow the non-linearity of the view transform"
 msgstr ""
 
-#: ../Src/DasherCore/ClickFilter.h:12
+#: Src/DasherCore/ClickFilter.h:23
 msgid "Click Mode"
 msgstr ""
 
 #. TRANSLATORS: The zoom factor per press when moving to the right in compass mode.
-#: ../Src/DasherCore/CompassMode.cpp:30
+#: Src/DasherCore/CompassMode.cpp:30
 msgid "Right zoom"
 msgstr ""
 
 #. bMenu
-#: ../Src/DasherCore/CompassMode.cpp:38
+#: Src/DasherCore/CompassMode.cpp:38
 msgid "Compass Mode"
 msgstr ""
 
-#: ../Src/DasherCore/DasherGameMode.cpp:637
-msgid "Well done!"
+#. /TRANSLATORS: %s is the name of the alphabet; the string "GameTextFile"
+#. / refers to a setting name in gsettings or equivalent, and should not be translated.
+#: Src/DasherCore/DasherInterfaceBase.cpp:314
+#, c-format
+msgid ""
+"Could not find game sentences file for %s - check alphabet definition, or "
+"override with GameTextFile setting"
 msgstr ""
 
-#: ../Src/DasherCore/DasherInterfaceBase.cpp:911
+#: Src/DasherCore/DasherInterfaceBase.cpp:784
 msgid "Normal Control"
 msgstr ""
 
 #. TODO: specialist factory for button mode
-#: ../Src/DasherCore/DasherInterfaceBase.cpp:927
+#: Src/DasherCore/DasherInterfaceBase.cpp:794
 msgid "Menu Mode"
 msgstr ""
 
-#: ../Src/DasherCore/DasherInterfaceBase.cpp:928
-msgid "Direct Mode"
+#: Src/DasherCore/DefaultFilter.cpp:14
+msgid "Vertical distance from mouse/gaze to target (400=screen height)"
 msgstr ""
 
-#: ../Src/DasherCore/DasherInterfaceBase.cpp:932
-msgid "Stylus Control"
+#: Src/DasherCore/DefaultFilter.cpp:15
+msgid "Learn offset (previous) automatically, e.g. gazetrackers"
 msgstr ""
 
-#: ../Src/DasherCore/EyetrackerFilter.cpp:9
-msgid "Automatic calibration"
+#: Src/DasherCore/DefaultFilter.cpp:16
+msgid ""
+"At top and bottom, scroll more and translate less (makes error-correcting "
+"easier)"
 msgstr ""
 
-#: ../Src/DasherCore/EyetrackerFilter.cpp:13
-msgid "Eyetracker Mode"
+#: Src/DasherCore/DefaultFilter.cpp:17
+msgid ""
+"Screen geometry (mostly for tall thin screens) - 0=old-style, 1=square no-"
+"xhair, 2=squish, 3=squish+log"
+msgstr ""
+
+#: Src/DasherCore/DefaultFilter.cpp:18
+msgid ""
+"Shape type: 0=disjoint rects, 1=overlapping, 2=triangles, 3=trunc-tris, "
+"4=quadrics, 5=circles"
+msgstr ""
+
+#: Src/DasherCore/DefaultFilter.cpp:19
+msgid ""
+"Distance from right-hand-side Y-axis, at which maximum speed is reached. "
+"(2048=xhair)"
+msgstr ""
+
+#: Src/DasherCore/DefaultFilter.cpp:20
+msgid "Hold right mouse button / key 1 to go 3/4 faster"
+msgstr ""
+
+#: Src/DasherCore/DefaultFilter.cpp:21
+msgid "Use exact computation of per-frame movement (slower)"
+msgstr ""
+
+#: Src/DasherCore/DemoFilter.cpp:15
+msgid "Demo Mode (no input)"
+msgstr ""
+
+#: Src/DasherCore/GameModule.cpp:8
+msgid "Filename of sentences to enter"
+msgstr ""
+
+#: Src/DasherCore/GameModule.cpp:9
+msgid "Distance of sentence from center to decide user needs help"
+msgstr ""
+
+#: Src/DasherCore/GameModule.cpp:10
+msgid "Time for which user must need help before help drawn"
+msgstr ""
+
+#: Src/DasherCore/GameModule.cpp:11
+msgid "When we give help, show the shortest path to the target sentence?"
+msgstr ""
+
+#: Src/DasherCore/MandarinAlphMgr.cpp:176 Src/DasherCore/RoutingAlphMgr.cpp:128
+#, c-format
+msgid ""
+"Warning: faulty alphabet definition: training-start delimiter %s must be a "
+"single unicode character. May be unable to process training file."
+msgstr ""
+
+#: Src/DasherCore/MandarinAlphMgr.cpp:186
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"no group of that name contains the character; ignoring group specifier"
+msgstr ""
+
+#: Src/DasherCore/MandarinAlphMgr.cpp:199
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"no group of that name contains the character. Dasher will not be able to "
+"learn how you want to write this character."
+msgstr ""
+
+#: Src/DasherCore/MandarinAlphMgr.cpp:200 Src/DasherCore/RoutingAlphMgr.cpp:147
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"alphabet contains several such groups. Dasher will not be able to learn how "
+"you want to write this character."
+msgstr ""
+
+#: Src/DasherCore/MandarinAlphMgr.cpp:220 Src/DasherCore/RoutingAlphMgr.cpp:164
+#, c-format
+msgid ""
+"Warning: in training file, annotation '<%s>' is followed by another "
+"annotation and will be ignored"
+msgstr ""
+
+#. /TRANSLATORS: first string will be the filename; after the end of the string,
+#. / some number of output (e.g. Chinese) characters will be appended,
+#. / the number of which is the integer here
+#: Src/DasherCore/MandarinAlphMgr.cpp:244
+#, c-format
+msgid ""
+"In file %s, the following %i symbol appeared without annotations saying how "
+"it should be entered, but it can be entered in several ways. Dasher will not "
+"be able to learn how you want to enter this symbol:"
+msgid_plural ""
+"In file %s, the following %i symbols appeared without annotations saying how "
+"they should be entered, but each can be entered in several ways. Dasher will "
+"not be able to learn how you want to enter these symbols:"
+msgstr[0] ""
+
+#: Src/DasherCore/NodeCreationManager.cpp:33
+msgid "Training on User Text"
+msgstr ""
+
+#: Src/DasherCore/NodeCreationManager.cpp:33
+msgid "Training on System Text"
+msgstr ""
+
+#. /TRANSLATORS: These 3 messages will be displayed when the user has just chosen a new alphabet. The %s parameter will be the name of the alphabet.
+#: Src/DasherCore/NodeCreationManager.cpp:90
+#, c-format
+msgid ""
+"No user training text found - if you have written in \"%s\" before, this "
+"means Dasher may not be learning from previous sessions"
+msgstr ""
+
+#: Src/DasherCore/NodeCreationManager.cpp:91
+#, c-format
+msgid ""
+"No training text (user or system) found for \"%s\". Dasher will still work "
+"but entry will be slower. We suggest downloading a training text file from "
+"the Dasher website, or constructing your own."
+msgstr ""
+
+#: Src/DasherCore/NodeCreationManager.cpp:97
+#, c-format
+msgid ""
+"\"%s\" does not specify training file. Dasher will work but entry will be "
+"slower. Check you have the latest version of the alphabet definition."
 msgstr ""
 
 #. TRANSLATORS: The time for which a button must be held before it counts as a 'long' (rather than short) press.
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:31
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:32
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:35
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:31
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:32
 msgid "Long press time"
 msgstr ""
 
 #. TRANSLATORS: Double-clicks are special in some situations (they cause us to start reversing). This is the time in which the button must be pressed twice to count.
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:33
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:33
 msgid "Double-press time"
 msgstr ""
 
 #. TRANSLATORS: Backoff = reversing in Dasher to correct mistakes. This allows a single button to be dedicated to activating backoff, rather than using multiple presses of other buttons.
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:35
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:35
 msgid "Enable backoff button"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:36
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:43
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:38
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:36
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:43
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:37
 msgid "Slow startup"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:37
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:44
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:37
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:44
 msgid "Startup time"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:38
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:46
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:40
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:38
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:46
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:39
 msgid "Percentage by which to automatically increase speed"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:39
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:47
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:41
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:39
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:47
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:40
 msgid "Time after which to automatically increase speed (secs)"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:40
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:48
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:42
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:40
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:48
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:41
 msgid "Percentage by which to decrease speed upon reverse"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonDynamicFilter.cpp:44
+#: Src/DasherCore/OneButtonDynamicFilter.cpp:44
 msgid "One Button Dynamic Mode"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonFilter.cpp:11
+#: Src/DasherCore/OneButtonFilter.cpp:12
 msgid "Scan time (each direction), in ms"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonFilter.cpp:12
+#: Src/DasherCore/OneButtonFilter.cpp:13
 msgid "Factor by which to zoom in"
 msgstr ""
 
-#: ../Src/DasherCore/OneButtonFilter.cpp:13
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:45
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:43
+#: Src/DasherCore/OneButtonFilter.cpp:14
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:45
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:42
 msgid "Lag before user actually pushes button (ms)"
 msgstr ""
 
-#. COneDimensionalFilter(Dasher::CEventHandler * pEventHandler, CSettingsStore *pSettingsStore, CDasherInterfaceBase *pInterface, CDasherModel *m_pDasherModel);
-#: ../Src/DasherCore/OneDimensionalFilter.h:12
+#. COneDimensionalFilter(CSettingsStore *pSettingsStore, CDasherInterfaceBase *pInterface, CDasherModel *m_pDasherModel);
+#: Src/DasherCore/OneDimensionalFilter.h:12
 msgid "One Dimensional Mode"
 msgstr ""
 
-#: ../Src/DasherCore/SettingsStore.cpp:76
-#: ../Src/Gtk2/DasherAppSettings.cpp:523
-#: ../Src/Gtk2/DasherAppSettings.cpp:557
-#: ../Src/Gtk2/DasherAppSettings.cpp:561
+#: Src/DasherCore/RoutingAlphMgr.cpp:146
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"no group of that name contains the character. Ignoring group specifier."
+msgstr ""
+
+#: Src/DasherCore/SettingsStore.cpp:100 Src/Gtk2/DasherAppSettings.cpp:127
+#: Src/Gtk2/DasherAppSettings.cpp:131
 msgid "true"
 msgstr "true"
 
-#: ../Src/DasherCore/SettingsStore.cpp:78
-#: ../Src/Gtk2/DasherAppSettings.cpp:525
-#: ../Src/Gtk2/DasherAppSettings.cpp:557
-#: ../Src/Gtk2/DasherAppSettings.cpp:561
+#: Src/DasherCore/SettingsStore.cpp:100
+msgid "True"
+msgstr "True"
+
+#: Src/DasherCore/SettingsStore.cpp:102 Src/Gtk2/DasherAppSettings.cpp:127
+#: Src/Gtk2/DasherAppSettings.cpp:131
 msgid "false"
 msgstr "false"
+
+#: Src/DasherCore/SettingsStore.cpp:102
+msgid "False"
+msgstr "False"
 
 #. Note to translators: This message will be output for a command line
 #. with "--options foo=VAL" and foo is a boolean valued parameter, but
 #. "VAL" is not true or false.
-#: ../Src/DasherCore/SettingsStore.cpp:84
-#: ../Src/Gtk2/DasherAppSettings.cpp:528
+#: Src/DasherCore/SettingsStore.cpp:108
 msgid "boolean value must be specified as 'true' or 'false'."
 msgstr ""
 
 #. Note to translators: This is output when command line "--options" doesn't
 #. specify a known option.
-#: ../Src/DasherCore/SettingsStore.cpp:104
+#: Src/DasherCore/SettingsStore.cpp:130
 msgid "unknown option, use \"--help-options\" for more information."
 msgstr ""
 
-#. TODO should probably pop up a Gtk error message and think about how to do i18n:
-#: ../Src/DasherCore/SocketInput.cpp:34
-msgid "Dasher socket input: failed to launch reader thread."
-msgstr ""
-
-#: ../Src/DasherCore/SocketInputBase.cpp:27
+#: Src/DasherCore/SocketInputBase.cpp:27
 msgid "Port:"
 msgstr "Порт:"
 
-#: ../Src/DasherCore/SocketInputBase.cpp:28
-#, fuzzy
+#: Src/DasherCore/SocketInputBase.cpp:28
 msgid "X label:"
-msgstr "белгі"
+msgstr "X белгісі:"
 
-#: ../Src/DasherCore/SocketInputBase.cpp:29
+#: Src/DasherCore/SocketInputBase.cpp:29
 msgid "X minimum:"
 msgstr ""
 
-#: ../Src/DasherCore/SocketInputBase.cpp:30
-#, fuzzy
+#: Src/DasherCore/SocketInputBase.cpp:30
 msgid "X maximum:"
-msgstr "Максимум (%d%%)"
+msgstr "X максимумы:"
 
-#: ../Src/DasherCore/SocketInputBase.cpp:31
-#, fuzzy
+#: Src/DasherCore/SocketInputBase.cpp:31
 msgid "Y label:"
-msgstr "белгі"
+msgstr "Y белгісі:"
 
-#: ../Src/DasherCore/SocketInputBase.cpp:32
+#: Src/DasherCore/SocketInputBase.cpp:32
 msgid "Y minimum:"
 msgstr ""
 
-#: ../Src/DasherCore/SocketInputBase.cpp:33
-#, fuzzy
+#: Src/DasherCore/SocketInputBase.cpp:33
 msgid "Y maximum:"
-msgstr "Максимум (%d%%)"
+msgstr "Y максимумы:"
 
-#: ../Src/DasherCore/SocketInputBase.cpp:34
+#: Src/DasherCore/SocketInputBase.cpp:34
 msgid "Print socket-related debugging information to console:"
 msgstr ""
 
-#: ../Src/DasherCore/SocketInputBase.cpp:38
+#: Src/DasherCore/SocketInputBase.cpp:38
 msgid "Socket Input"
 msgstr ""
 
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:30
+#. TODO This is not a very good error message even in English...???
+#: Src/DasherCore/SocketInputBase.cpp:108
+msgid "Error creating socket"
+msgstr ""
+
+#: Src/DasherCore/SocketInputBase.cpp:116
+msgid "Error binding to socket - already in use?"
+msgstr ""
+
+#: Src/DasherCore/SocketInputBase.cpp:169
+#, c-format
+msgid "Warning truncating socket input label '%s' to %i characters."
+msgstr ""
+
+#: Src/DasherCore/SocketInputBase.cpp:195
+msgid "Socket input: Error reading from socket"
+msgstr ""
+
+#: Src/DasherCore/SocketInputBase.cpp:297
+#, c-format
+msgid "Dasher Socket Input error: %s: %s"
+msgstr ""
+
+#. TODO should probably pop up a Gtk error message and think about how to do i18n:
+#: Src/DasherCore/SocketInput.cpp:31
+msgid "Dasher socket input: failed to launch reader thread."
+msgstr ""
+
+#: Src/DasherCore/StylusFilter.cpp:10
+msgid "Max time for a 'tap' (anything longer is held)"
+msgstr ""
+
+#: Src/DasherCore/StylusFilter.h:12
+msgid "Stylus Control"
+msgstr ""
+
+#. no context switch commands will be executed!
+#: Src/DasherCore/Trainer.cpp:34
+#, c-format
+msgid ""
+"Warning: faulty alphabet definition, escape sequence %s must be a single "
+"unicode character. This may worsen Dasher's text prediction."
+msgstr ""
+
+#: Src/DasherCore/Trainer.cpp:101
+#, c-format
+msgid "Unable to open file \"%s\" for reading"
+msgstr "\"%s\" файлын оқу үшін ашу мүмкін емес"
+
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:30
 msgid "Button offset"
 msgstr ""
 
 #. TRANSLATORS: Multiple button presses are special (like a generalisation on double clicks) in some situations. This is the maximum time between two presses to count as _part_of_ a multi-press gesture
 #. (potentially more than two presses).
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:35
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:35
 msgid "Multiple press interval"
 msgstr ""
 
 #. TRANSLATORS: Backoff = reversing in Dasher to correct mistakes. This allows a single button to be dedicated to activating backoff, rather than using multiple presses of other buttons, and another to be dedicated to starting and stopping. 'Button' in this context is a physical hardware device, not a UI element.
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:37
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:37
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:37
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:36
 msgid "Enable backoff and start/stop buttons"
 msgstr ""
 
 #. TRANSLATORS: What is normally the up button becomes the down button etc.
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:39
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:39
 msgid "Reverse up and down buttons"
 msgstr ""
 
 #. TRANSLATORS: Pushing the up/down button twice quickly has the same effect as pushing the other
 #. button once; in this case, one must push three times (or push-and-hold) to reverse.
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:42
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:42
 msgid "Double-click is opposite up/down — triple to reverse"
 msgstr ""
 
-#: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:52
+#: Src/DasherCore/TwoButtonDynamicFilter.cpp:52
 msgid "Two Button Dynamic Mode"
 msgstr ""
 
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:30
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:30
 msgid "Offset for outer (second) button"
 msgstr ""
 
 #. divisor
 #. step
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:31
-msgid "Distance for 1st button UP"
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:31
+msgid "Distance between down markers (long gap)"
 msgstr ""
 
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:32
-msgid "Distance for 1st button DOWN"
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:32
+msgid "Distance between up markers, as percentage of long gap"
 msgstr ""
 
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:33
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:33
 msgid "Tolerance for inaccurate timing of button pushes (in ms)"
 msgstr ""
 
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:39
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:34
+msgid ""
+"Use push and release times of single press rather than push times of two "
+"presses"
+msgstr ""
+
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:38
 msgid "Slow startup time"
 msgstr ""
 
-#: ../Src/DasherCore/TwoPushDynamicFilter.cpp:47
+#: Src/DasherCore/TwoPushDynamicFilter.cpp:46
 msgid "Two-push Dynamic Mode (New One Button)"
 msgstr ""
 
-#: ../Src/Gtk2/DasherAppSettings.cpp:554
+#: Src/Gtk2/DasherAppSettings.cpp:124
 msgid "Boolean parameters"
 msgstr ""
 
-#: ../Src/Gtk2/DasherAppSettings.cpp:554
-#: ../Src/Gtk2/DasherAppSettings.cpp:565
-#: ../Src/Gtk2/DasherAppSettings.cpp:576
+#: Src/Gtk2/DasherAppSettings.cpp:124 Src/Gtk2/DasherAppSettings.cpp:135
+#: Src/Gtk2/DasherAppSettings.cpp:146
 msgid "Default"
 msgstr "Бастапқы"
 
-#: ../Src/Gtk2/DasherAppSettings.cpp:554
-#: ../Src/Gtk2/DasherAppSettings.cpp:565
-#: ../Src/Gtk2/DasherAppSettings.cpp:576
+#: Src/Gtk2/DasherAppSettings.cpp:124 Src/Gtk2/DasherAppSettings.cpp:135
+#: Src/Gtk2/DasherAppSettings.cpp:146
 msgid "Description"
 msgstr "Сипаттамасы"
 
-#: ../Src/Gtk2/DasherAppSettings.cpp:565
+#: Src/Gtk2/DasherAppSettings.cpp:135
 msgid "Integer parameters"
 msgstr ""
 
-#: ../Src/Gtk2/DasherAppSettings.cpp:576
+#: Src/Gtk2/DasherAppSettings.cpp:146
 msgid "String parameters"
 msgstr ""
 
-#: ../Src/Gtk2/Preferences.cpp:440
-#: ../Src/Gtk2/Preferences.cpp:1011
-msgid "Action"
-msgstr "Әрекет"
-
-#. TRANSLATORS: Show a button for the selected action in the Dasher window.
-#: ../Src/Gtk2/Preferences.cpp:1018
-msgid "Show Button"
-msgstr "Батырманы көрсету"
-
-#: ../Src/Gtk2/Preferences.cpp:1023
-msgid "Control Mode"
+#: Src/Gtk2/dasher_editor.cpp:812 Src/Gtk2/dasher_main.cpp:550
+#: Src/Gtk2/dasher_main.cpp:885
+msgid "_Open"
 msgstr ""
 
-#. TRANSLATORS: Automatically perform the selected action when Dasher is stopped.
-#: ../Src/Gtk2/Preferences.cpp:1029
-msgid "Auto On Stop"
-msgstr ""
+#: Src/Gtk2/dasher_editor.cpp:814 Src/Gtk2/dasher_editor.cpp:848
+#: Src/Gtk2/dasher_main.cpp:549 Src/Gtk2/dasher_main.cpp:886
+msgid "_Cancel"
+msgstr "Ба_с тарту"
 
-#: ../Src/Gtk2/Speech.cpp:27
-msgid "Unable to initialize speech support\n"
-msgstr ""
-
-#: ../Src/Gtk2/Speech.cpp:58
-msgid "Warning: unable to set speech parameters\n"
-msgstr ""
-
-#: ../Src/Gtk2/Speech.cpp:69
-msgid "Unable to initialize voices\n"
-msgstr ""
-
-#: ../Src/Gtk2/dasher_action_keyboard.cpp:62
-#: ../Src/Gtk2/dasher_action_keyboard_maemo.cpp:96
-msgid "Enter Text"
-msgstr ""
-
-#: ../Src/Gtk2/dasher_action_script.cpp:91
-msgid "Script"
-msgstr "Скрипт"
+#: Src/Gtk2/dasher_editor.cpp:846
+msgid "_Save"
+msgstr "_Сақтау"
 
 #. Note to translators: This message will be output for command line errors when the "=" in --options=foo is missing.
-#: ../Src/Gtk2/dasher_main.cpp:265
+#: Src/Gtk2/dasher_main.cpp:231
 msgid "option setting is missing \"=\"."
 msgstr ""
 
 #. Note to translators: This string will be output when --options= specifies an unknown option.
-#: ../Src/Gtk2/dasher_main.cpp:281
+#: Src/Gtk2/dasher_main.cpp:247
 msgid "Invalid option string specified"
 msgstr ""
 
-#: ../Src/Gtk2/dasher_main.cpp:950
+#: Src/Gtk2/dasher_main.cpp:607
+msgid ""
+"Welcome to Dasher Game Mode! Game Mode is a fun way to practice entering "
+"text in Dasher. Please select a training text to play with:"
+msgstr ""
+
+#: Src/Gtk2/dasher_main.cpp:609
+msgid "Use Default"
+msgstr "Бастапқысын қолдану"
+
+#: Src/Gtk2/dasher_main.cpp:610
+msgid "Choose File..."
+msgstr ""
+
+#: Src/Gtk2/dasher_main.cpp:611
+msgid "Cancel"
+msgstr "Бас тарту"
+
+#: Src/Gtk2/dasher_main.cpp:634
+msgid ""
+"Are you sure you wish to turn off game mode? All unsaved changes will be "
+"lost."
+msgstr ""
+
+#: Src/Gtk2/dasher_main.cpp:636
+msgid "No"
+msgstr ""
+
+#: Src/Gtk2/dasher_main.cpp:637
+msgid "Yes"
+msgstr "Иә"
+
+#: Src/Gtk2/dasher_main.cpp:922
 #, c-format
 msgid ""
 "Do you want to save your changes to %s?\n"
@@ -959,85 +1102,120 @@ msgid ""
 "Your changes will be lost if you don't save them."
 msgstr ""
 
-#: ../Src/Gtk2/dasher_main.cpp:957
+#: Src/Gtk2/dasher_main.cpp:929
 msgid ""
 "Do you want to save your changes?\n"
 "\n"
 "Your changes will be lost if you don't save them."
 msgstr ""
 
-#: ../Src/Gtk2/dasher_main.cpp:963
-msgid "Don't save"
-msgstr "Сақтамау"
+#: Src/Gtk2/dasher_main.cpp:935
+msgid "Quit without saving"
+msgstr ""
 
-#: ../Src/Gtk2/dasher_main.cpp:964
-#: ../Src/Gtk2/dasher_main.cpp:987
+#: Src/Gtk2/dasher_main.cpp:936 Src/Gtk2/dasher_main.cpp:959
 msgid "Don't quit"
 msgstr "Шықпау"
 
-#: ../Src/Gtk2/dasher_main.cpp:965
+#: Src/Gtk2/dasher_main.cpp:937
 msgid "Save and quit"
 msgstr "Сақтау мен шығу"
 
-#: ../Src/Gtk2/dasher_main.cpp:984
+#: Src/Gtk2/dasher_main.cpp:956
 msgid "Are you sure you wish to quit?"
 msgstr "Шығуға сенімдісіз бе?"
 
-#: ../Src/Gtk2/dasher_main.cpp:1031
+#: Src/Gtk2/dasher_main.cpp:998
 msgid "Unable to open help file"
 msgstr "Көмек ақпараты файлын ашу мүмкін емес"
 
-#: ../Src/Gtk2/dasher_main.cpp:1083
+#: Src/Gtk2/dasher_main.cpp:1050
 msgid "Dasher is a predictive text entry application"
 msgstr ""
 
-#: ../Src/Gtk2/dasher_main.cpp:1088
+#: Src/Gtk2/dasher_main.cpp:1055
 msgid "translator-credits"
 msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2010"
 
-#: ../Src/Gtk2/module_settings_window.cpp:88
+#: Src/Gtk2/module_settings_window.cpp:77
+msgid "_Close"
+msgstr "_Жабу"
+
+#: Src/Gtk2/module_settings_window.cpp:88
 msgid "Dasher Module Options"
 msgstr ""
 
-#: ../Src/Gtk2/module_settings_window.cpp:94
+#: Src/Gtk2/module_settings_window.cpp:94
 #, c-format
 msgid "%s Options:"
 msgstr "%s опциялары:"
 
-#: ../Src/Gtk2/mouse_input.h:15
+#: Src/Gtk2/mouse_input.h:14
 msgid "Mouse Input"
 msgstr ""
 
-#: ../Src/Gtk2/mouse_input.h:51
+#: Src/Gtk2/mouse_input.h:44
 msgid "Pixels covering Y range"
 msgstr ""
 
 #. TRANSLATORS: Only use the vertical mouse coordinate - this is prefered for some disabled users.
-#: ../Src/Gtk2/mouse_input.h:58
+#: Src/Gtk2/mouse_input.h:51
 msgid "One Dimensional Mouse Input"
 msgstr ""
+
+#: Src/Gtk2/Preferences.cpp:437
+msgid "Action"
+msgstr "Әрекет"
 
 #. {"timedata", 'w', 0, G_OPTION_ARG_NONE, &timedata, "Write basic timing information to stdout", NULL},
 #. {"preferences", 'p', 0, G_OPTION_ARG_NONE, &preferences, "Show preferences window only", NULL},
 #. {"textentry", 'o', 0, G_OPTION_ARG_NONE, &textentry, "Onscreen text entry mode", NULL},
 #. {"pipe", 's', 0, G_OPTION_ARG_NONE, &stdoutpipe, "Pipe text to stdout", NULL},
 #. Note to translators: This is the help string for "--appstyle". The four options in brackets MUST either NOT be translated or at least it MUST be clear that they must be used in english. Otherwise a user running a non-english system will receive an error message when using the translated one instead of the english one and has no chance to find out the correct option.
-#: ../Src/main.cc:171
+#: Src/main.cc:161
 msgid "Application style (traditional, direct, compose or fullscreen)"
 msgstr ""
 
 #. Note to translators: This is the help string for "--options"
-#: ../Src/main.cc:173
+#: Src/main.cc:163
 msgid "Override stored options"
 msgstr ""
 
+#: Src/main.cc:164
+msgid "XML configuration file name"
+msgstr ""
+
 #. Note to translators: This is the help string for "--help-options"
-#: ../Src/main.cc:175
+#: Src/main.cc:166
 msgid "Describe \"--options\"."
 msgstr ""
 
+#. parse command line options
 #. Note to translators: This is the "--help" description of dasher.
-#: ../Src/main.cc:182
+#: Src/main.cc:172
 msgid "- A text input application honouring accessibility"
 msgstr ""
 
+#~ msgid "Pr_eferences"
+#~ msgstr "Қа_лаулар"
+
+#~ msgid "_Contents"
+#~ msgstr "Құра_масы"
+
+#~ msgid "Level:"
+#~ msgstr "Деңгейі:"
+
+#~ msgid "Score:"
+#~ msgstr "Нәтиже:"
+
+#~ msgid "Actions"
+#~ msgstr "Әрекеттер"
+
+#~ msgid "Show Button"
+#~ msgstr "Батырманы көрсету"
+
+#~ msgid "Script"
+#~ msgstr "Скрипт"
+
+#~ msgid "Don't save"
+#~ msgstr "Сақтамау"
