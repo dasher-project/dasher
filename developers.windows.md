@@ -34,13 +34,14 @@ EXPAT          C:\Program Files\Expat 2.2.5
 ## Building
 Visual Studio 2013 solution/project files are included in the 
 Src/Win32 directory.
+
 **NOTE** 
 '''
-Default build tools of Visiual Studio don't work. So you need to modify the Target Framework and Platform Toolset. Instructions can be found at [How to Retarget](https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+Default build tools of Visiual Studio don't work. So you need to modify the Target Framework and Platform Toolset. Instructions can be found at [ How to Retarget ](https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
 '''
 
 ## Support and Feedback
-Please file any bug reports in the [GNOME Bugzilla system] (http://bugzilla.gnome.org/)
+Please file any bug reports in the [ GNOME Bugzilla system ](http://bugzilla.gnome.org/)
 using the 'dasher' package name. 
 You can find the Dasher website at: 
 http://www.inference.phy.cam.ac.uk/dasher/
