@@ -33,7 +33,10 @@ jobs:
           command: ls -al
       - run:
           command: |
+            echo Content of current directory
+            ls -al
+            echo Switching to java directory
+            cd java
             echo Running tests
-            cd dasher/java
             gradle test
 
