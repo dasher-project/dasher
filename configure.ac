@@ -18,7 +18,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_LIBOBJ_DIR([Src/Common])
 
-AM_INIT_AUTOMAKE([1.8 gnu check-news dist-bzip2 subdir-objects])
+AM_INIT_AUTOMAKE([1.8 foreign check-news dist-bzip2 subdir-objects])
 AM_MAINTAINER_MODE
 
 LT_INIT([disable-static])

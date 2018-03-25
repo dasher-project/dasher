@@ -18,7 +18,7 @@ inline void CScreen::DrawRectangle(screenint x1, screenint y1, screenint x2, scr
   if(Colour != -1)
     FillRect(m_hDCBuffer, &Rect, brush);
 
-  if(GetWidth() != (screenint)-1) {
+  if(GetWidth() != (screenint)-1 && iThickness != 0) {
 
     point aPoints[5];
 
