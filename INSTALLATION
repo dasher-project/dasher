@@ -1,0 +1,86 @@
+Copyright (C) 2013 The Dasher Project
+ 
+This file is free documentation; the Dasher Project gives unlimited
+permission to copy, distribute and modify it.
+
+Basic Installation 
+==================
+
+Dasher makes use of the GNU autotools system (automake, autoconf
+etc.), which are described in the 'INSTALL' file.  The following is
+specific to building and installing Dasher on JAVA.  The Dasher
+maintainer documentation is at http://live.gnome.org/Dasher.
+
+!IMPORTANT NOTE BEFORE STARTING
+
+This project builds an applet, not a standalone application.
+https://github.com/dasher-project/dasher/blob/master/java/src/main/java/dasher/applet/JDasherApplet.java is the entry point
+
+https://github.com/dasher-project/dasher/blob/master/java/src/main/java/dasher/applet/test.htm shows how you run that from within an HTML page.
+
+This is all obviously quite old, and some modern browsers (notably Chrome and Edge) don't support Java applets anymore. However, as of the time of writing (and checking https://superuser.com/questions/1213341/how-to-get-a-browser-that-supports-java), Internet Explorer and Firefox ESR should still be able to show JDasher.
+
+
+Let's try the easy route first:
+
+    Install Java 8 or Higher
+        On Windows and Linux, install the latest JRE 8 from Oracle.
+        On macOS, download and install JDK 8.
+
+    Install Gradle 
+	Clone it using Git: 
+		$ git clone https://github.com/spring-guides/gs-gradle.git
+	
+	cd into gs-gradle/initial
+	
+	Install SDKMAN(The Software Development Kit Manager)
+		
+		Simply open a new terminal and enter: 
+		$ curl -s "https://get.sdkman.io" | bash
+
+		Follow the instructions on-screen to complete installation.
+		Next, open a new terminal or enter:
+		$ source "$HOME/.sdkman/bin/sdkman-init.sh"
+		
+		Lastly, run the following code snippet to ensure that installation succeeded:
+		$ sdk version
+		
+		If all went well, the version should be displayed. Something like:
+		sdkman 5.0.0+51
+	
+	Install Gradle 4.6
+
+		$ sdk install gradle 4.6
+
+	To test the Gradle installation, run Gradle from the command-line:
+		$ gradle
+
+	If all goes well, you see a welcome message:
+		:help
+
+		Welcome to Gradle 2.3.
+
+		To run a build, run gradle <task> ...
+
+		To see a list of available tasks, run gradle tasks
+
+		To see a list of command-line options, run gradle --help
+
+		BUILD SUCCESSFUL
+
+		Total time: 2.675 secs
+
+	Cd into dasher/java
+
+		$ gradle build 
+
+	Build you project with Gradle Wrapper
+
+		$ gradle wrapper --gradle-version 2.13
+
+		$ ./gradlew build
+	
+
+The Contributor’s Guide
+=======================
+If you would like to contribute to this project, please check out the following guide: https://docs.google.com/document/d/1qosKPV0GXbHs69PyvK9BR3S3oNgdV8il7AVfO1M4Fh4
