@@ -1,5 +1,5 @@
 # Dassher Java Installation and Code Explanation
-This document shows how dassher work on java. 
+This document contains 5 part about dassher's java version.
 
 * Installing and testing(1)
 * Licensing(2)
