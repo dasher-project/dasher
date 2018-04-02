@@ -24,5 +24,5 @@ jobs:
             echo Running tests
             gradle test -i
       - store_artifacts:
-          path:  build/reports/tests/test/
+          path:  java/build/reports/tests/test/
 
