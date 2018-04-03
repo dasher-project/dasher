@@ -6,28 +6,19 @@ import static org.junit.Assert.*;
 public class CAlphabetMapTest {
 
 	CAlphabetMap map = new CAlphabetMap(5);
-	SSymbol symbol;
-	SSymbol newSymbol;
 
 	@Before
-	public void init(){
-		symbol = new SSymbol();
-		newSymbol = new SSymbol();
+	public void setUp(){
 		map.Add("key", 2);
-		symbol.symbol = 2;
-		symbol.prefix = false;
-		newSymbol.symbol = 0;
-		newSymbol.prefix = false;
 	}
 
 	@Test
-	public void testGettingValueMapContains() {
-			assertEquals(map.Get("key").symbol, symbol.symbol);
+	public void gettingValueMapContains() {
+		assertEquals(map.Get("key").symbol, 2);
 	}
 
 	@Test
-	public void testGettingValueMapDoesntContain() {
-			assertEquals(map.Get("yek").symbol, newSymbol.symbol);
+	public void gettingValueMapDoesNotContain() {
+		assertEquals(map.Get("notExists").symbol, 0);
 	}
-
 }
