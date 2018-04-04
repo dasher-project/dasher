@@ -32,12 +32,17 @@ need to change these to reflect reality on your system):
 EXPAT          C:\Program Files\Expat 2.2.5
 
 ## Building
-Visual Studio 2013 solution/project files are included in the 
+Visual Studio 2017 solution/project files are included in the 
 Src/Win32 directory.
 
 **NOTE** 
 
+For 2017 version needs Visual Studio 2015(v140) tool.
+
+**NOTE** 
+
 Default build tools of Visiual Studio don't work. So you need to modify the Target Framework and Platform Toolset. Instructions can be found at [ How to Retarget ](https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+
 
 
 ## Support and Feedback
