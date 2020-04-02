@@ -45,9 +45,9 @@
   }
 }
 
-- (unsigned int)indexOfAppWithApplicationName:(NSString *)aName {
-  unsigned int len = [[self apps] count];
-  unsigned int i;
+- (unsigned long)indexOfAppWithApplicationName:(NSString *)aName {
+  unsigned long len = [[self apps] count];
+  unsigned long i;
   for (i = 0; i < len; i++) {
     NSDictionary *d = [[self apps] objectAtIndex:i];
     if ([[d objectForKey:@"NSApplicationName"] isEqualToString:aName]) {
@@ -62,9 +62,9 @@
   return ([[appInfo1 objectForKey:@"NSApplicationProcessSerialNumberHigh"] isEqual: [appInfo2 objectForKey:@"NSApplicationProcessSerialNumberHigh"]] && [[appInfo1 objectForKey:@"NSApplicationProcessSerialNumberLow"] isEqual: [appInfo2 objectForKey:@"NSApplicationProcessSerialNumberLow"]]);
 }
 
-- (unsigned int)indexOfAppWithInfo:(NSDictionary *)anAppInfo {
-  unsigned int len = [[self apps] count];
-  unsigned int i;
+- (unsigned long)indexOfAppWithInfo:(NSDictionary *)anAppInfo {
+  unsigned long len = [[self apps] count];
+  unsigned long i;
   for (i = 0; i < len; i++) {
     NSDictionary *d = [[self apps] objectAtIndex:i];
     if ([self psnOfAppInfo:d isEqualToPsnOfAppInfo:anAppInfo]) {
@@ -83,6 +83,7 @@
 }
 
 - (NSString *)applicationName {
+	
   return [[NSProcessInfo processInfo] processName];
 }
 
@@ -100,7 +101,7 @@
 
 - (void)seeAppDie:(NSNotification *)note {
   NSDictionary *d = [note userInfo];
-  unsigned int i = [self indexOfAppWithInfo:d];
+  unsigned long i = [self indexOfAppWithInfo:d];
   if (i != NSNotFound) {
     [[self apps] removeObjectAtIndex:i];
     [appsController rearrangeObjects];

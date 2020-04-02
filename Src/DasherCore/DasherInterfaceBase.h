@@ -519,7 +519,7 @@ protected:
   CDasherModel * const m_pDasherModel;
   ///Framerate monitor; created in constructor, req'd for DynamicFilter subclasses
   CFrameRate * const m_pFramerate;
-  
+  CFileUtils* m_fileUtils;
  private:
   
   ///We keep a reference to the (currently unique/global) SettingsStore with which
@@ -535,7 +535,7 @@ protected:
   };
 
   CPreSetObserver m_preSetObserver;
-  CFileUtils* m_fileUtils;
+  
 
   //The default expansion policy to use - an amortized policy depending on the LP_NODE_BUDGET parameter.
   CExpansionPolicy *m_defaultPolicy;

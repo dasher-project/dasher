@@ -49,7 +49,7 @@ public:
   void RegenerateLabels() {
     OpenGLScreen::RegenerateLabels();
   }
-  
+  bool IsWindowUnderCursor() override { return YES; }
 protected:
   void RenderStringOntoCGContext(NSString *string, CGContextRef context, unsigned int iFontSize, bool bWrap) {
     NSGraphicsContext *old = [NSGraphicsContext currentContext];

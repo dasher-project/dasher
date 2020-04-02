@@ -22,7 +22,7 @@
 /// Class representing the Dasher UI component (ie the canvas and speed slider)
 ///
 
-class COSXDasherControl : public CDashIntfScreenMsgs {
+class COSXDasherControl : public CDashIntfScreenMsgs,CFileUtils {
   
 public:
   
@@ -37,7 +37,7 @@ public:
   
   COSXDasherControl(DasherApp *aDasherApp);
   ~COSXDasherControl();
-  
+  virtual int GetAllContextLenght();
   void Realize2();
   void TimerFired(NSPoint p);
   void Train(NSString *fileName);
@@ -50,6 +50,7 @@ public:
   
   void goddamn(unsigned long iTime, bool bForceRedraw);
   virtual void WriteTrainFile(const std::string &filename, const std::string &strNewText);
+	virtual bool WriteUserDataFile(const std::string &filename, const std::string &strNewText, bool append);
   std::string GetAllContext();
   void ClearAllContext();
   std::string GetContext(unsigned int iOffset, unsigned int iLength);

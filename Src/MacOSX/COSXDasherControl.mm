@@ -77,8 +77,9 @@ private:
 };
 
 COSXDasherControl::COSXDasherControl(DasherApp *aDasherApp)
-: CDashIntfScreenMsgs(new COSXSettingsStore()), dasherApp(aDasherApp), dasherEdit(nil),
+: CDashIntfScreenMsgs(new COSXSettingsStore(),NULL), dasherApp(aDasherApp), dasherEdit(nil),
   userDir([[NSString stringWithFormat:@"%@/Library/Application Support/Dasher/", NSHomeDirectory()] retain]) {
+	  m_fileUtils=(CFileUtils*)this;
 }
 
 void COSXDasherControl::CreateModules() {
@@ -196,7 +197,23 @@ void COSXDasherControl::Train(NSString *fileName) {
   NSLog(@"Read train file: %s", f.c_str());
   CDasherInterfaceBase::ImportTrainingText(f);
 }
-
+bool COSXDasherControl::WriteUserDataFile(const std::string &filename, const std::string &strNewText, bool append)
+{
+	if(strNewText.length() == 0)
+	  return false;
+	
+	std::string strFilename(StdStringFromNSString(userDir) + filename);
+	
+	NSLog(@"Write train file: %s", strFilename.c_str());
+	int flg=O_CREAT|O_WRONLY|S_IWUSR;
+	if(append)
+		flg|=O_APPEND,S_IRUSR;
+	int fd=open(strFilename.c_str(),flg);
+	write(fd,strNewText.c_str(),strNewText.length());
+	close(fd);
+	return true;
+	
+}
 void COSXDasherControl::WriteTrainFile(const std::string &filename, const std::string &strNewText) {
   if(strNewText.length() == 0)
     return;
@@ -317,7 +334,10 @@ std::string COSXDasherControl::GetContext(unsigned int iOffset, unsigned int iLe
 std::string COSXDasherControl::GetAllContext() {
   return StdStringFromNSString([dasherEdit allContext]);
 }
-
+int COSXDasherControl::GetAllContextLenght()
+{
+	return StdStringFromNSString([dasherEdit allContext]).length();
+}
 void COSXDasherControl::ClearAllContext() {
   [dasherEdit clearContext];
   SetBuffer(0);

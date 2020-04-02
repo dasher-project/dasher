@@ -20,8 +20,8 @@
 - (id)init;
 - (void)awakeFromNib;
 - (void)fillApps;
-- (unsigned int)indexOfAppWithApplicationName:(NSString *)aName;
-- (unsigned int)indexOfAppWithInfo:(NSDictionary *)anAppInfo;
+- (unsigned long)indexOfAppWithApplicationName:(NSString *)aName;
+- (unsigned long)indexOfAppWithInfo:(NSDictionary *)anAppInfo;
 - (void)seeAppLaunch:(NSNotification *)note;
 - (NSString *)applicationName;
 - (BOOL)addAppInfo:(NSDictionary *)anAppInfo;

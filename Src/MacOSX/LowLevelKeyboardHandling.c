@@ -543,7 +543,7 @@ GetKeyboardLayout (Ptr * resourcePtr, TextEncoding * encodingPtr)
      * possibly already in 10.2.
      */
     
-    currentLayoutId = GetScriptVariable(currentKeyScript,smScriptKeys);
+    currentLayoutId = GetScriptVariable(currentKeyScript,smKeyScript);
     
     if ((lastLayout == NULL) || (lastLayoutId != currentLayoutId)) {
       
