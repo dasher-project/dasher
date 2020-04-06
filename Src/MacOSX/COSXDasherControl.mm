@@ -77,9 +77,8 @@ private:
 };
 
 COSXDasherControl::COSXDasherControl(DasherApp *aDasherApp)
-: CDashIntfScreenMsgs(new COSXSettingsStore(),NULL), dasherApp(aDasherApp), dasherEdit(nil),
+: CDashIntfScreenMsgs(new COSXSettingsStore(),this), dasherApp(aDasherApp), dasherEdit(nil),
   userDir([[NSString stringWithFormat:@"%@/Library/Application Support/Dasher/", NSHomeDirectory()] retain]) {
-	  m_fileUtils=(CFileUtils*)this;
 }
 
 void COSXDasherControl::CreateModules() {
