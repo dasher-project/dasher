@@ -519,6 +519,7 @@ protected:
   CDasherModel * const m_pDasherModel;
   ///Framerate monitor; created in constructor, req'd for DynamicFilter subclasses
   CFrameRate * const m_pFramerate;
+
  private:
   
   ///We keep a reference to the (currently unique/global) SettingsStore with which
