@@ -60,3 +60,6 @@ Src/DasherCore/Alphabet/.dirstamp
 
 .gradle/
 .idea
+
+# Visual Studio Code
+.ionide/
